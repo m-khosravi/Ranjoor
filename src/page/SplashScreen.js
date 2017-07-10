@@ -5,7 +5,7 @@ import * as Animatable from 'react-native-animatable';
 
 export default class SplashScreen extends React.Component {
     render() {
-        const { navigate } = this.props.navigation;
+        const { dispatch } = this.props.navigation;
 
         return (
         <View style={styles.container}>
@@ -13,12 +13,12 @@ export default class SplashScreen extends React.Component {
                 <Animatable.View 
                     animation="slideInDown"
                     style={{width: 230, height: 230, backgroundColor: 'transparent'}}
-                    onAnimationEnd = {(endState) => {
-                     if(endState.finished) {
-                        navigate('Main')
-                     } else {
-                        console.log('not yet!')
-                     }
+                    onAnimationEnd = {() => {
+                        dispatch({
+                            type: 'Navigation/RESET',
+                            index: 0,
+                            actions: [{ type: 'Navigate', routeName: 'Main' }]
+                        })
                     }}
                 >
                     <Image style={styles.introLogo}
