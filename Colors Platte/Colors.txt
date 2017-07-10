@@ -1,4 +1,4 @@
-Main Navigation Color: #44a139 (Gorgeous Green)
-Introduction Page Background: #44a139(Gorgeous Green)
-Introduction Icon and Menu Buttons: #253028(Deep Dark Gray)
+Main Navigation Color: #3863cc (Gorgeous Blue)
+Introduction Page Background: #3863cc(Gorgeous Blue)
+Introduction Icon and Menu Buttons: #242329(Deep Dark Gray)
 Fonts: White + Dark Gray
