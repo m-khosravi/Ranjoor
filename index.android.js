@@ -45,8 +45,8 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
   introLogo: {
-    width: 210,
-    height: 145
+    width: 230,
+    height: 230
   }
 });
 
