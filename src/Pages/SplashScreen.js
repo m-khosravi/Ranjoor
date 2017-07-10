@@ -7,21 +7,25 @@ View,
 Image
 } from 'react-native';
 import * as Animatable from 'react-native-animatable';
-import { StackNavigator } from 'react-navigation';
+import { TabNavigator, StackNavigator, DrawerNavigator } from 'react-navigation';
 import RanjoorMain from './RanjoorMain';
 
-
-
-class SplashScreen extends Component {
+class SplashScreen extends React.Component {
 render() {
     return (
     <View style={styles.container}>
         <View style={{flex:1}}></View>
-        <Animatable.View style={{width: 230, height: 230, backgroundColor: 'transparent'}}>
-            <Image style={styles.introLogo}
-            source={require('../Images/Logo/Ranjoor.png')}
-            />
-        </Animatable.View>
+            <Animatable.View 
+                animation="slideInDown"
+                style={{width: 230, height: 230, backgroundColor: 'transparent'}}
+                onAnimationEnd = {(endState) => {
+                endState.finished ? this.props.navigation.navigate('GoToRanjoorMain'): console.log('not yet!')
+                }}
+            >
+                <Image style={styles.introLogo}
+                    source={require('../Images/Logo/Ranjoor.png')}
+                />
+            </Animatable.View>
         <View style={{flex:1}}></View>
     </View>
     );
@@ -61,6 +65,5 @@ const GoToRanjoorMain = StackNavigator({
 GoToRanjoorMain.navigationOptions = {
 title: 'Ranjoor', 
 };
-
 
 export default SplashScreen
