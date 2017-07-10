@@ -17,4 +17,14 @@ const GotoRanjoorMain = StackNavigator({
   Main: { screen: RanjoorMain }
 })
 
+GotoRanjoorMain.navigationOptions = {
+  headerStyle: styles.ranjHeader
+}
+
+
+const styles = StyleSheet.create({
+  ranjHeader: {
+    backgroundColor: '#242329'
+  }
+})
 export default GotoRanjoorMain
