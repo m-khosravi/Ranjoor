@@ -19,7 +19,7 @@ export default class Ranjoor extends Component {
       <View style={styles.container}>
         <View style={{flex:1}}></View>
         <Image style={styles.introLogo}
-          source={require('./src/images/logos/logo.png')}
+          source={require('./src/Images/Logo/Ranjoor.png')}
         />
         <View style={{flex:1}}></View>
       </View>
