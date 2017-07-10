@@ -7,7 +7,10 @@ import {
 } from 'react-native';
 
 
-class RanjoorMain extends Component {
+class RanjoorMain extends React.Component {
+    static navigationOptions = {
+        title: 'Welcome',
+    };
     render() {
         return(
             <View>
