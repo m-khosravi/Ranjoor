@@ -7,6 +7,8 @@ import {
   Image
 } from 'react-native';
 import FadeInView from '../Animations/FadeInAnimation';
+import { StackNavigator } from 'react-navigation';
+import RanjoorMain from './RanjoorMain';
 
 class SplashScreen extends Component {
   render() {
@@ -46,5 +48,15 @@ const styles = StyleSheet.create({
     height: 230
   }
 });
+
+/* This StackNavigator will change the route to the RanjoorMain.js after a couple of ms */
+const GoToRanjoorMain = StackNavigator({
+    Splash: { screen: SplashScreen },
+    Main: { screen: RanjoorMain }
+})
+
+GoToRanjoorMain.navigationOptions = {
+  title: 'Ranjoor',
+};
 
 export default SplashScreen
