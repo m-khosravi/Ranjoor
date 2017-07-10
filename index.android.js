@@ -9,23 +9,19 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
+  Image
 } from 'react-native';
 
 export default class Ranjoor extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.android.js
-        </Text>
-        <Text style={styles.instructions}>
-          Double tap R on your keyboard to reload,{'\n'}
-          Shake or press menu button for dev menu
-        </Text>
+        <View style={{flex:1}}></View>
+        <Image style={styles.introLogo}
+          source={require('./src/images/logos/logo.png')}
+        />
+        <View style={{flex:1}}></View>
       </View>
     );
   }
@@ -36,18 +32,22 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#253028',
+    backgroundColor: '#3863cc',
   },
   welcome: {
-    fontSize: 20,
+    fontSize: 45,
     textAlign: 'center',
     margin: 10,
   },
   instructions: {
     textAlign: 'center',
-    color: '#333333',
+    color: '#242329',
     marginBottom: 5,
   },
+  introLogo: {
+    width: 210,
+    height: 145
+  }
 });
 
 AppRegistry.registerComponent('Ranjoor', () => Ranjoor);
