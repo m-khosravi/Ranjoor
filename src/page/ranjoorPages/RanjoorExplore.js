@@ -7,9 +7,9 @@ import {
 } from 'react-native';
 
 
-class RanjoorMain extends React.Component {
+class RanjoorExplore extends React.Component {
     static navigationOptions = {
-        title: 'Main',
+        title: 'Explore',
     };
     render() {
         return(
@@ -19,4 +19,4 @@ class RanjoorMain extends React.Component {
         );
     }
 }
-export default RanjoorMain
+export default RanjoorExplore

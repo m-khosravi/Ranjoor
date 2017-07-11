@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { StyleSheet } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 import SplashScreen from './page/SplashScreen';
-import RanjoorMain from './page/RanjoorMain';
+import TabWrapper from './page/RanjoorPagesWrapper';
 
 
 class Ranjoor extends Component {
@@ -14,11 +14,9 @@ class Ranjoor extends Component {
   }
 }
 
-
-
 const GotoRanjoorMain = StackNavigator({
   Splash: { screen: SplashScreen },
-  Main: { screen: RanjoorMain }
+  TabWrapper: { screen: TabWrapper }
 })
 
 export default GotoRanjoorMain
