@@ -13,5 +13,5 @@ Ganjoor with some difficulties in React-Native.
     + SettingsScreen
 + Implement the ListView inside the main page.
 + Style the tab navigator and main page ListView.
-+ Add transition effect on the **route['Splash' => 'Main']**
++ Add transition effect on the route['Splash' => 'Main']
 ```
