@@ -7,16 +7,16 @@ import {
 } from 'react-native';
 
 
-class RanjoorMain extends React.Component {
+class RanjoorPoets extends React.Component {
     static navigationOptions = {
-        title: 'Main',
+        title: 'Poets',
     };
     render() {
         return(
             <View>
-                <Text>This is the Ranjoor's main page</Text>
+                <Text>This is the Ranjoor's poets page</Text>
             </View>
         );
     }
 }
-export default RanjoorMain
+export default RanjoorPoets
