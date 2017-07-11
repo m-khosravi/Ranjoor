@@ -5,20 +5,19 @@ import * as Animatable from 'react-native-animatable';
 
 export default class SplashScreen extends React.Component {
     static navigationOptions = {
-      headerStyle: { backgroundColor: '#3863cc',
+        headerStyle: { backgroundColor: '#3863cc',
                      shadowOpacity: 0,
                      shadowOffset: { height: 0, width:0 },
                      elevation: 0 
-                   }
+         },
     }
     render() {
         const { dispatch } = this.props.navigation;
-
         return (
         <View style={styles.container}>
             <View style={{flex:1}}></View>
                 <Animatable.View 
-                    animation="slideInDown"
+                    animation="fadeIn"
                     style={{width: 230, height: 230, backgroundColor: 'transparent'}}
                     onAnimationEnd = {() => {
                         dispatch({
