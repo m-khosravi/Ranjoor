@@ -6,7 +6,7 @@ import {
   Image
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
-const myIcon = (<Icon name="rocket" size={30} color="#900" />)
+const myIcon = (<Icon name="pencil-square-o" size={20} color="#242329" />)
 
 class RanjoorPoets extends React.Component {
     static navigationOptions = {
