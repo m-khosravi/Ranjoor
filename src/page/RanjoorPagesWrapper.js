@@ -14,6 +14,14 @@ const TabWrapper = TabNavigator({
   Settings: {screen: RanjoorSettings}
 }, {
   tabBarPosition: 'bottom',
+  swipeEnabled: true,
+	animationEnabled: true,
+  		tabBarOptions: {
+			showLabel: true,
+			showIcon: true,
+			upperCaseLabel: false,
+			scrollEnabled: false,
+		}
 });
 
 export default TabWrapper

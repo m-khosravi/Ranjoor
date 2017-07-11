@@ -5,10 +5,13 @@ import {
   View,
   Image
 } from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome';
+const myIcon = (<Icon name="rocket" size={30} color="#900" />)
 
 class RanjoorSettings extends React.Component {
     static navigationOptions = {
         title: 'Settings',
+        tabBarIcon: myIcon
     };
     render() {
         return(
