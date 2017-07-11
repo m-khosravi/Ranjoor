@@ -7,8 +7,8 @@ import RanjoorPoets from './ranjoorPages/RanjoorPoets';
 import RanjoorSettings from './ranjoorPages/RanjoorSettings';
 
 const TabWrapper = TabNavigator({
-  Explore: {screen: ExploreScreen},
-  Search: {screen: SetupScreen},
+  Explore: {screen: RanjoorExplore},
+  Search: {screen: RanjoorSearch},
   Poets: {screen: RanjoorPoets},
   Settings: {screen: RanjoorSettings}
 });
