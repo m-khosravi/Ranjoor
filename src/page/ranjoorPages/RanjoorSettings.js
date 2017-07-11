@@ -6,7 +6,6 @@ import {
   Image
 } from 'react-native';
 
-
 class RanjoorSettings extends React.Component {
     static navigationOptions = {
         title: 'Settings',
@@ -14,7 +13,7 @@ class RanjoorSettings extends React.Component {
     render() {
         return(
             <View>
-                <Text>This is the Ranjoor's poets page</Text>
+                <Text>This is the Ranjoor's settings page</Text>
             </View>
         );
     }

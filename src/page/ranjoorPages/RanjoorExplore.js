@@ -5,12 +5,11 @@ import {
   View,
   Image
 } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
 
-const searchIcon = (<Icon name='search' size={20} color='#900' />)
 class RanjoorExplore extends React.Component {
     static navigationOptions = {
         title: 'Explore',
+        tabBarIcon: Icon
     };
     render() {
         return(
