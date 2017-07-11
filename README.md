@@ -4,12 +4,14 @@ Ganjoor with some difficulties in React-Native.
 
 
 ## Todo: 7.11.2017
-1. Style the header in all pages.
-2. Implement the tab navigation. Screens to be implemented:
-* MainScreen(Explore)
-* SearchScreen
-* PoetsScreen
-* SettingsScreen
-3. Implement the ListView inside the main page.
-4. Style the tab navigator and main page ListView.
-5. Add transition effect on the **route['Splash' => 'Main']**
+```
++ Style the header in all pages.
++ Implement the tab navigation. Screens to be implemented:
+    + MainScreen(Explore)
+    + SearchScreen
+    + PoetsScreen
+    + SettingsScreen
++ Implement the ListView inside the main page.
++ Style the tab navigator and main page ListView.
++ Add transition effect on the **route['Splash' => 'Main']**
+```
