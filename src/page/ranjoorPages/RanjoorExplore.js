@@ -11,7 +11,7 @@ const myIcon = (<Icon name="bandcamp" size={20} color="#242329" />)
 class RanjoorExplore extends React.Component {
     static navigationOptions = {
         title: 'Explore',
-        tabBarIcon: myIcon
+        tabBarIcon: myIcon,
     };
     render() {
         return(

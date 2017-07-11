@@ -20,7 +20,6 @@ const TabWrapper = TabNavigator({
 			showLabel: true,
 			showIcon: true,
 			upperCaseLabel: false,
-			scrollEnabled: false,
 		}
 });
 

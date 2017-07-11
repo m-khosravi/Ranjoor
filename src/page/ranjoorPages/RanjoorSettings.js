@@ -11,7 +11,7 @@ const myIcon = (<Icon name="cogs" size={20} color="#242329" />)
 class RanjoorSettings extends React.Component {
     static navigationOptions = {
         title: 'Settings',
-        tabBarIcon: myIcon
+        tabBarIcon: myIcon,
     };
     render() {
         return(

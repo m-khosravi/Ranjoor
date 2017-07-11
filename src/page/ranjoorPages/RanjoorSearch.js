@@ -11,7 +11,7 @@ const myIcon = (<Icon name="search" size={20} color="#242329" />)
 class RanjoorSearch extends React.Component {
     static navigationOptions = {
         title: 'Search',
-        tabBarIcon: myIcon
+        tabBarIcon: myIcon,
     };
     render() {
         return(

@@ -11,7 +11,7 @@ const myIcon = (<Icon name="pencil-square-o" size={20} color="#242329" />)
 class RanjoorPoets extends React.Component {
     static navigationOptions = {
         title: 'Poets',
-        tabBarIcon: myIcon
+        tabBarIcon: myIcon,
     };
     render() {
         return(
