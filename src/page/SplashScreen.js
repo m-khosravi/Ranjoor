@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
 import * as Animatable from 'react-native-animatable';
 
+
+
 export default class SplashScreen extends React.Component {
     static navigationOptions = {
         headerStyle: { backgroundColor: '#3863cc',

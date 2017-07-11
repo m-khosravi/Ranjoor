@@ -13,4 +13,8 @@ const TabWrapper = TabNavigator({
   Settings: {screen: RanjoorSettings}
 });
 
+TabWrapper.navigationOptions = {
+  tabBarPosition: 'bottom',
+  animationEnabled: 'true'
+}
 export default TabWrapper
