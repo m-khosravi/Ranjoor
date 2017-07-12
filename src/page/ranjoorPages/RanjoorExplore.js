@@ -28,7 +28,7 @@ class RanjoorExplore extends React.Component {
             <View style={styles.ExploreContainer}>
                 <Card
                 containerStyle={{backgroundColor:'#202026'}}
-                image={require('../../img/walls/wall1.jpg')}>
+                >
                 <View style={{backgroundColor:'transparent'}}>
                     <Button
                         iconRight
