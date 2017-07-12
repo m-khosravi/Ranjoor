@@ -12,11 +12,7 @@ class RanjoorFavorites extends React.Component {
     static navigationOptions = {
         title: 'Favorites',
         tabBarIcon: myIcon,
-        headerStyle: { backgroundColor: '#202026',
-                     shadowOpacity: 0,
-                     shadowOffset: { height: 0, width:0 },
-                     elevation: 0,
-         },
+        headerStyle: { backgroundColor: '#202026'},
         headerTitleStyle: {
             color: 'white'
         },
