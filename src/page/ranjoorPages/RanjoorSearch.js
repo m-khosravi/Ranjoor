@@ -6,6 +6,7 @@ import {
   Image
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import { SearchBar } from 'react-native-elements';
 
 class RanjoorSearch extends React.Component {
     static navigationOptions = {
@@ -25,7 +26,7 @@ class RanjoorSearch extends React.Component {
     render() {
         return(
             <View style={styles.SearchContainer}>
-                <Text>This is the Ranjoor's search page</Text>
+                <SearchBar />
             </View>
         );
     }
