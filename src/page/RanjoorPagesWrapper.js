@@ -16,9 +16,17 @@ const TabWrapper = TabNavigator({
   tabBarPosition: 'bottom',
   swipeEnabled: true,
 	animationEnabled: true,
-  		tabBarOptions: {
+  tabBarOptions: {
+      style: {
+        backgroundColor: '#202026',
+        height: 42
+      },
+      pressColor: '#303036',
 			showLabel: true,
 			showIcon: true,
+      indicatorStyle: {
+        backgroundColor: '#4ab367'
+      },
 			upperCaseLabel: false,
 		}
 });

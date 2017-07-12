@@ -11,3 +11,4 @@ Ganjoor with some difficulties in React-Native.
 * Implement the tab navigation. Screens to be implemented: -> (Done)
 * Implement the tab navigation icons and styling. -> (Done)
 * Configure the gradle to display the icons correctly([Visit Me!](https://github.com/MorphLab/react-native-vector-icons#option-with-gradle-recommended)). -> (Done)
+

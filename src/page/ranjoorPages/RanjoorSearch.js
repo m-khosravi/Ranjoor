@@ -6,7 +6,7 @@ import {
   Image
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
-const myIcon = (<Icon name="search" size={20} color="#242329" />)
+const myIcon = (<Icon name="search" size={20} color="#ffffff" />)
 
 class RanjoorSearch extends React.Component {
     static navigationOptions = {

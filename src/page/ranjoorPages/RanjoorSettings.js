@@ -6,7 +6,7 @@ import {
   Image
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
-const myIcon = (<Icon name="cogs" size={20} color="#242329" />)
+const myIcon = (<Icon name="cogs" size={20} color="#ffffff" />)
 
 class RanjoorSettings extends React.Component {
     static navigationOptions = {
