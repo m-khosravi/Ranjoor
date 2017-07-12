@@ -12,3 +12,7 @@ Ganjoor with some difficulties in React-Native.
 * Implement the tab navigation icons and styling. -> (Done)
 * Configure the gradle to display the icons correctly([Visit Me!](https://github.com/MorphLab/react-native-vector-icons#option-with-gradle-recommended)). -> (Done)
 
+## Todo: 7.12.2017
+* Style the intro page and tab bar navigator.
+* Style the Explore page and display data in list item.
+* Implement the Search tab.
