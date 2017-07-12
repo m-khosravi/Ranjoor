@@ -7,7 +7,7 @@ import * as Animatable from 'react-native-animatable';
 
 export default class SplashScreen extends React.Component {
     static navigationOptions = {
-        headerStyle: { backgroundColor: '#3863cc',
+        headerStyle: { backgroundColor: '#ffffff',
                      shadowOpacity: 0,
                      shadowOffset: { height: 0, width:0 },
                      elevation: 0 
@@ -20,6 +20,7 @@ export default class SplashScreen extends React.Component {
             <View style={{flex:1}}></View>
                 <Animatable.View 
                     animation="fadeIn"
+                    duration={2000}
                     style={{width: 230, height: 230, backgroundColor: 'transparent'}}
                     onAnimationEnd = {() => {
                         dispatch({
@@ -44,7 +45,7 @@ container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#3863cc',
+    backgroundColor: '#ffffff',
 },
 welcome: {
     fontSize: 45,
