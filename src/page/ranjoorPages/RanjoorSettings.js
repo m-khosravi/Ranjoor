@@ -6,7 +6,7 @@ import {
   Image
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
-const myIcon = (<Icon name="cogs" size={20} color="#ffffff" />)
+const myIcon = (<Icon name="sliders" size={24} color="#ffffff" />)
 
 class RanjoorSettings extends React.Component {
     static navigationOptions = {
@@ -15,10 +15,18 @@ class RanjoorSettings extends React.Component {
     };
     render() {
         return(
-            <View>
+            <View style={styles.SettingsContainer}>
                 <Text>This is the Ranjoor's settings page</Text>
             </View>
         );
     }
 }
+
+var styles = StyleSheet.create({
+    SettingsContainer: {
+        backgroundColor: '#303036',
+        height: '100%',
+        width: '100%'
+    }
+})
 export default RanjoorSettings

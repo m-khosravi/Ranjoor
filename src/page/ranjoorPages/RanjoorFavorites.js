@@ -6,27 +6,28 @@ import {
   Image
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
-const myIcon = (<Icon name="bandcamp" size={24} color="#ffffff" />)
+const myIcon = (<Icon name="star" size={24} color="#ffffff" />)
 
-class RanjoorExplore extends React.Component {
+class RanjoorFavorites extends React.Component {
     static navigationOptions = {
-        title: 'Explore',
+        title: 'Favorites',
         tabBarIcon: myIcon,
     };
     render() {
         return(
-            <View style={styles.ExploreContainer}>
-                <Text>This is the Ranjoor's main page</Text>
+            <View style={styles.FavoritesContainer}>
+                <Text>This is the Ranjoor's Favorites page</Text>
             </View>
         );
     }
 }
 
 var styles = StyleSheet.create({
-    ExploreContainer: {
+    FavoritesContainer: {
         backgroundColor: '#303036',
         height: '100%',
         width: '100%'
     }
 })
-export default RanjoorExplore
+
+export default RanjoorFavorites

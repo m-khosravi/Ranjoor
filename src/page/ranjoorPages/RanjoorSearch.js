@@ -6,7 +6,7 @@ import {
   Image
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
-const myIcon = (<Icon name="search" size={20} color="#ffffff" />)
+const myIcon = (<Icon name="search" size={24} color="#ffffff" />)
 
 class RanjoorSearch extends React.Component {
     static navigationOptions = {
@@ -15,10 +15,18 @@ class RanjoorSearch extends React.Component {
     };
     render() {
         return(
-            <View>
+            <View style={styles.SearchContainer}>
                 <Text>This is the Ranjoor's search page</Text>
             </View>
         );
     }
 }
+
+var styles = StyleSheet.create({
+    SearchContainer: {
+        backgroundColor: '#303036',
+        height: '100%',
+        width: '100%'
+    }
+})
 export default RanjoorSearch
