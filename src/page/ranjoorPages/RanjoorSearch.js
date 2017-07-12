@@ -36,12 +36,12 @@ class RanjoorSearch extends React.Component {
         return(
             <View style={styles.SearchContainer}>
                 <SearchBar
-                 placeholder='Looking for something?'
+                 placeholder='　جستجوی پیشرفته'
                  round={true}
                  onChangeText={() => { textChanged = true }}
                  showLoadingIcon={true}
                  containerStyle={{backgroundColor:'#202026'}}
-                 inputStyle={{backgroundColor:'#303036', fontFamily: 'Roboto'}}
+                 inputStyle={{backgroundColor:'#303036', fontFamily: 'IRANSans_UltraLight'}}
                  />
                 <View style={{flex:2}}></View>
                 <View style={styles.logoContainer}> 

@@ -24,8 +24,5 @@
 	},
 	"jest": {
 		"preset": "react-native"
-	},
-	"rnpm": {
-  		 "assets": ["./android/app/src/main/res/assets/fonts"]
 	}
 }
