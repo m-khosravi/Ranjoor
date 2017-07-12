@@ -6,12 +6,17 @@ import {
   Image
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
-const myIcon = (<Icon name="search" size={24} color="#ffffff" />)
 
 class RanjoorSearch extends React.Component {
     static navigationOptions = {
         title: 'Search',
-        tabBarIcon: myIcon,
+        tabBarIcon: ({ tintColor, focused }) => (
+            <Icon
+                name="search"
+                size={ 24 } 
+                color={focused ? '#4ab367' : 'white'}
+            />
+        ),
         headerStyle: { backgroundColor: '#202026' },  
         headerTitleStyle: {
             color: 'white'

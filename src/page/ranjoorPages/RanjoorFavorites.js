@@ -6,12 +6,17 @@ import {
   Image
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
-const myIcon = (<Icon name="star" size={24} color="#ffffff" />)
 
 class RanjoorFavorites extends React.Component {
     static navigationOptions = {
+        tabBarIcon: ({ tintColor,focused }) => (
+            <Icon
+                name="star"
+                size={ 24 } 
+                color={focused ? '#4ab367' : 'white'}
+            />
+        ),
         title: 'Favorites',
-        tabBarIcon: myIcon,
         headerStyle: { backgroundColor: '#202026'},
         headerTitleStyle: {
             color: 'white'
