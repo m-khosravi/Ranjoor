@@ -5,6 +5,7 @@ import {
   View,
   Image
 } from 'react-native';
+import { Card, ListItem, Button } from 'react-native-elements';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 class RanjoorExplore extends React.Component {
@@ -25,7 +26,22 @@ class RanjoorExplore extends React.Component {
     render() {
         return(
             <View style={styles.ExploreContainer}>
-                <Text>This is the Ranjoor's main page</Text>
+                <Card
+                containerStyle={{backgroundColor:'#202026'}}
+                image={require('../../img/walls/wall1.jpg')}>
+                <View style={{backgroundColor:'transparent'}}>
+                    <Button
+                        iconRight
+                        icon={{name: 'book'}}
+                        backgroundColor='#4ab367'
+                        fontFamily='IRANSans'
+                        buttonStyle={{alignSelf: 'flex-end', height: 15, width: 100, 
+                            borderRadius: 8, marginLeft: 0, 
+                            marginRight: 0, marginBottom: 0}}
+                        title='ادامه شعر'
+                    />                
+                </View>
+                </Card>
             </View>
         );
     }
@@ -36,6 +52,6 @@ var styles = StyleSheet.create({
         backgroundColor: '#303036',
         height: '100%',
         width: '100%'
-    }
+    },
 })
 export default RanjoorExplore

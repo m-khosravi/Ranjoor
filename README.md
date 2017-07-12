@@ -16,3 +16,4 @@ Ganjoor with some difficulties in React-Native.
 * Style the intro page and tab bar navigator. -> (Done)
 * Font Customizations. -> (Done)
 * Implement the Search tab. -> (Done)
+
