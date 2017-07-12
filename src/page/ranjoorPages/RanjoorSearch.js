@@ -26,7 +26,14 @@ class RanjoorSearch extends React.Component {
     render() {
         return(
             <View style={styles.SearchContainer}>
-                <SearchBar />
+                <View style={{flex:1}}>      </View>
+                <SearchBar
+                 placeholder='Search something...'
+                 showLoadingIcon={this.props.isLoading? true : false}
+                 round={true}
+                 showLoadingIcon={this.refs.someInputRef.focus ? true : false}
+                 />
+                <View style={{flex:1}}>      </View>
             </View>
         );
     }
@@ -37,6 +44,6 @@ var styles = StyleSheet.create({
         backgroundColor: '#303036',
         height: '100%',
         width: '100%'
-    }
+    },
 })
 export default RanjoorSearch
