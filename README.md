@@ -14,5 +14,5 @@ Ganjoor with some difficulties in React-Native.
 
 ## Todo: 7.12.2017
 * Style the intro page and tab bar navigator. -> (Done)
-* Style the Explore page and display data in list item.
-* Implement the Search tab.
+* Font Customizations. -> (Done)
+* Implement the Search tab. -> (Done)
