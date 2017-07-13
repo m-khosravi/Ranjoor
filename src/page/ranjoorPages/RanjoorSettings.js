@@ -9,6 +9,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 
 class RanjoorSettings extends React.Component {
     static navigationOptions = {
+        header: null,
         title: 'Settings',
         tabBarIcon: ({ tintColor, focused }) => (
             <Icon

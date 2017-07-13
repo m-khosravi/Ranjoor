@@ -3,13 +3,15 @@ import {
   StyleSheet,
   Text,
   View,
-  Image
+  Image,
+  ScrollView
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import ExploreCard from '../../elements/ExploreCard'
+import ExploreCard from '../../elements/ExploreCard';
 
 class RanjoorExplore extends React.Component {
     static navigationOptions = {
+        header: null,
         title: 'Explore',
         tabBarIcon: ({ tintColor, focused  }) => (
             <Icon
@@ -26,7 +28,15 @@ class RanjoorExplore extends React.Component {
     render() {
         return(
             <View style={styles.ExploreContainer}>
+              <ScrollView>
+                <ExploreCard />               
+                <ExploreCard />  
+                <ExploreCard /> 
+                <ExploreCard /> 
+                <ExploreCard /> 
                 <ExploreCard />
+              </ScrollView>
+
             </View>
         );
     }

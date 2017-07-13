@@ -19,7 +19,7 @@ var textChanged = false;
 
 class RanjoorSearch extends React.Component {
     static navigationOptions = {
-        title: 'Search',
+        header: null,
         tabBarIcon: ({ tintColor, focused }) => (
             <Icon
                 name="search"
@@ -27,10 +27,12 @@ class RanjoorSearch extends React.Component {
                 color={focused ? '#4ab367' : 'white'}
             />
         ),
-        headerStyle: { backgroundColor: '#202026', height: 0 },  
+        headerStyle: {backgroundColor: '#202026'},  
         headerTitleStyle: {
-            color: 'white'
-        }
+            fontFamily:'IRANSans_UltraLight',
+            color: 'white',
+            alignSelf:'flex-end'
+        },
     };
     render() {
         return(
