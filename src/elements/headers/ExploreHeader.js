@@ -3,7 +3,8 @@ import {
   StyleSheet,
   Text,
   View,
-  Image
+  Image,
+  StatusBar
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { Header, Divider } from 'react-native-elements';
@@ -12,6 +13,10 @@ export default class ExploreHeader extends Component {
     render(){
         return(
             <View>
+                <StatusBar
+                    backgroundColor="#1b1a20"
+                    barStyle="light-content"
+                />
                 <View style={{backgroundColor:'#202026', height:60,}}>
                     <Header
                     leftComponent={{ icon: 'menu', color: '#fff', height:48, width:28 }}

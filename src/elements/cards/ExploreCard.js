@@ -42,16 +42,20 @@ export default class ExploreCard extends React.Component {
                             />                    
                             <Icon 
                             name='grade' size={24} color="#34343a" style={{marginLeft:5}}
-                            />           
-                            <Button
+                            /> 
+                        <View style={{marginLeft: '47%'}}>
+                             <Button
                                 textStyle={{fontSize:15}}
                                 iconRight
                                 backgroundColor='#4ab367'
                                 fontFamily='IRANSans_UltraLight'
                                 buttonStyle={{height: 15, width: 110, 
-                                    borderRadius: 8, marginLeft: 165}}
+                                    borderRadius: 8}}
                                 title='ادامه مطلب'
-                            />
+                            />                           
+                        
+                        </View>          
+
                         </View>
                     </Card>
                 </View>
