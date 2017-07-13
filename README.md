@@ -17,3 +17,6 @@ Ganjoor with some difficulties in React-Native.
 * Font Customizations. -> (Done)
 * Implement the Search tab. -> (Done)
 
+## Todo: 7.13.2017
+* Use a custom header with custom icon. -> (Done)
+* Style the status bar and fix minor problems in the cards. -> (Done)
