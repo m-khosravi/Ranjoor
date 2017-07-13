@@ -5,8 +5,7 @@ import {
   View,
   Image
 } from 'react-native';
-import { Card, ListItem, Button } from 'react-native-elements';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import { Card, ListItem, Button, Icon } from 'react-native-elements';
 
 export default class ExploreCard extends React.Component {
     render() {
@@ -24,16 +23,19 @@ export default class ExploreCard extends React.Component {
                     </Text>
                 </View>
                 <View style={{alignSelf:'flex-end', backgroundColor:'transparent', flexDirection: 'row'}}>
-                    <Icon name="share" size={20} color="#34343a" style={{ }}/>
-                    <Icon name="heart" size={20} color="#34343a" style={{ marginLeft: 8 }}/>             
+                    <Icon 
+                    name='favorite' size={24} color="#34343a" style={{marginLeft:5}}
+                    />                    
+                    <Icon 
+                    name='grade' size={24} color="#34343a" style={{marginLeft:5}}
+                    />           
                     <Button
                         textStyle={{fontSize:15}}
                         iconRight
                         backgroundColor='#4ab367'
                         fontFamily='IRANSans_UltraLight'
                         buttonStyle={{height: 15, width: 110, 
-                            borderRadius: 8, marginLeft: 175, 
-                            marginRight: 0, marginBottom: 0}}
+                            borderRadius: 8, marginLeft: 165}}
                         title='ادامه مطلب'
                     />
                 </View>
