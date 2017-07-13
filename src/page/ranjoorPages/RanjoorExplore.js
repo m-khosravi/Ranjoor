@@ -7,7 +7,8 @@ import {
   ScrollView
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import ExploreCard from '../../elements/ExploreCard';
+import ExploreCard from '../../elements/cards/ExploreCard';
+import ExploreHeader from '../../elements/headers/ExploreHeader';
 
 class RanjoorExplore extends React.Component {
     static navigationOptions = {
@@ -28,16 +29,16 @@ class RanjoorExplore extends React.Component {
     render() {
         return(
             <View style={styles.ExploreContainer}>
+                <ExploreHeader />
               <ScrollView>
-                <ExploreCard />               
                 <ExploreCard />  
-                <ExploreCard /> 
-                <ExploreCard /> 
-                <ExploreCard /> 
-                <ExploreCard />
+                <ExploreCard />  
+                <ExploreCard />  
+                <ExploreCard />  
               </ScrollView>
 
             </View>
+
         );
     }
 }

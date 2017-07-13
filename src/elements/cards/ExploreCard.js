@@ -10,6 +10,7 @@ import { Card, ListItem, Button, Icon, Avatar} from 'react-native-elements';
 export default class ExploreCard extends React.Component {
     render() {
         return(
+                <View>
                  <Card
                     containerStyle={{height: 150, backgroundColor:'#202026', shadowOpacity: 0.7,
                                         shadowOffset:{height:5}, shadowColor: 'black', borderWidth: 0, borderRadius: 8, flexDirection: 'row'}}
@@ -21,7 +22,7 @@ export default class ExploreCard extends React.Component {
                                     <Avatar
                                     small
                                     rounded 
-                                    source={require('../img/avatars/ferdowsi.jpg')}
+                                    source={require('../../img/avatars/ferdowsi.jpg')}
                                     containerStyle={{alignSelf:'flex-end', marginRight:15,
                                                     shadowOpacity: 0.7,
                                                     shadowOffset:{height:5}, shadowColor: 'black'}}
@@ -53,6 +54,7 @@ export default class ExploreCard extends React.Component {
                             />
                         </View>
                     </Card>
+                </View>
         );
     }
 }
