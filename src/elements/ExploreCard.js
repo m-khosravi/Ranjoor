@@ -19,23 +19,22 @@ export default class ExploreCard extends React.Component {
                             <Text style={{alignSelf:'flex-end', fontFamily:'IRANSans', color:'white', marginTop: 10, marginRight:10}}>
                                 ساقیا بده جامی زان شراب روحانی
                             </Text>
-                    <Text style={{alignSelf:'flex-start', fontFamily:'IRANSans', color:'white', marginLeft:10}}>
+                    <Text style={{alignSelf:'flex-start', fontFamily:'IRANSans', color:'white'}}>
                         تا دمی برآساییم زین حجاب ظلمانی
                     </Text>
                 </View>
                 <View style={{alignSelf:'flex-end', backgroundColor:'transparent', flexDirection: 'row'}}>
-                    <Icon name="linkedin-square" size={20} color="#34343a" style={{ marginLeft: 10 }}/>
-                    <Icon name="telegram" size={20} color="#34343a" style={{ marginLeft: 8 }}/>
-                    <Icon name="instagram" size={20} color="#34343a" style={{ marginLeft: 8 }}/>                    
+                    <Icon name="share" size={20} color="#34343a" style={{ }}/>
+                    <Icon name="heart" size={20} color="#34343a" style={{ marginLeft: 8 }}/>             
                     <Button
+                        textStyle={{fontSize:15}}
                         iconRight
-                        icon={{name: 'book'}}
                         backgroundColor='#4ab367'
-                        fontFamily='IRANSans'
-                        buttonStyle={{height: 15, width: 100, 
-                            borderRadius: 8, marginLeft: 150, 
+                        fontFamily='IRANSans_UltraLight'
+                        buttonStyle={{height: 15, width: 110, 
+                            borderRadius: 8, marginLeft: 175, 
                             marginRight: 0, marginBottom: 0}}
-                        title='ادامه شعر'
+                        title='ادامه مطلب'
                     />
                 </View>
             </Card>
