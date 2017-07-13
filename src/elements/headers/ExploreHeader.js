@@ -14,7 +14,9 @@ export default class ExploreHeader extends Component {
             <View style={{backgroundColor:'#202026', height:71,}}>
                 <Header
                 leftComponent={{ icon: 'menu', color: '#fff' }}
-                centerComponent={{ text: 'MY TITLE', style: { color: '#fff' } }} 
+                centerComponent={<Image style={styles.logo}
+                                        source={require('../../img/logo/Ranjoor_white_wide.png')}
+                                 />} 
                 rightComponent={{ icon: 'home', color: '#fff' }}
                 />
             </View>
@@ -22,3 +24,11 @@ export default class ExploreHeader extends Component {
         )
     }
 }
+
+var styles = StyleSheet.create({
+    logo: {
+        width: 82,
+        height: 40,
+        marginTop:22
+    }
+})
