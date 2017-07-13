@@ -11,7 +11,7 @@ import { Header } from 'react-native-elements';
 export default class ExploreHeader extends Component {
     render(){
         return(
-            <View style={{backgroundColor:'#202026', height:70}}>
+            <View style={{backgroundColor:'#202026', height:71,}}>
                 <Header
                 leftComponent={{ icon: 'menu', color: '#fff' }}
                 centerComponent={{ text: 'MY TITLE', style: { color: '#fff' } }} 
