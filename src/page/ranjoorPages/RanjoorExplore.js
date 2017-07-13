@@ -33,8 +33,6 @@ class RanjoorExplore extends React.Component {
               <ScrollView>
                 <ExploreCard />  
                 <ExploreCard />  
-                <ExploreCard />  
-                <ExploreCard />  
               </ScrollView>
 
             </View>

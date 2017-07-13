@@ -6,20 +6,26 @@ import {
   Image
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import { Header } from 'react-native-elements';
+import { Header, Divider } from 'react-native-elements';
 
 export default class ExploreHeader extends Component {
     render(){
         return(
-            <View style={{backgroundColor:'#202026', height:71,}}>
-                <Header
-                leftComponent={{ icon: 'menu', color: '#fff' }}
-                centerComponent={<Image style={styles.logo}
-                                        source={require('../../img/logo/Ranjoor_white_wide.png')}
-                                 />} 
-                rightComponent={{ icon: 'home', color: '#fff' }}
-                />
+            <View>
+                <View style={{backgroundColor:'#202026', height:60,}}>
+                    <Header
+                    leftComponent={{ icon: 'menu', color: '#fff', height:48, width:28 }}
+                    centerComponent={<Image style={styles.logo}
+                                            source={require('../../img/logo/Ranjoor_white_wide.png')}
+                                    />} 
+                    rightComponent={{ icon: 'home', color: '#fff', height:48, width:28  }}
+                    />
+                </View>
+                <View>
+                    <Divider style={{ backgroundColor: 'white' }} />
+                </View>
             </View>
+
 
         )
     }
@@ -27,8 +33,8 @@ export default class ExploreHeader extends Component {
 
 var styles = StyleSheet.create({
     logo: {
-        width: 82,
+        width: 85,
         height: 40,
-        marginTop:22
+        marginBottom:6
     }
 })
