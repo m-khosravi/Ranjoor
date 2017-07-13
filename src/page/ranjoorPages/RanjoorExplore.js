@@ -27,7 +27,8 @@ class RanjoorExplore extends React.Component {
         return(
             <View style={styles.ExploreContainer}>
                 <Card
-                containerStyle={{backgroundColor:'#202026'}}
+                containerStyle={{height: 150, backgroundColor:'#202026', shadowOpacity: 0.7,
+                                 shadowOffset:{height:5}, shadowColor: 'black', borderWidth: 0, borderRadius: 8}}
                 >
                 <View style={{backgroundColor:'transparent'}}>
                     <Button
