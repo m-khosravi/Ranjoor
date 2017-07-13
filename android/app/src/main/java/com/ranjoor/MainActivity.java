@@ -1,6 +1,7 @@
 package com.ranjoor;
 
 import com.facebook.react.ReactActivity;
+import me.neo.react.StatusBarPackage;
 
 public class MainActivity extends ReactActivity {
 
