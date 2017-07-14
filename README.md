@@ -25,3 +25,4 @@ Ganjoor with some difficulties in React-Native.
 * Implement the logic to grab the data from **Ganjoor API**. -> (Almost Done)
 * Modify the **RanjoorExplore** to display the data. -> (Almost Done)
 * Justify the content on different display sizes and compatibility test. -> (Done)
+* Setup the local database and API. -> (Done)
