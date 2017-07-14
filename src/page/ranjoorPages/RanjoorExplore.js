@@ -31,14 +31,14 @@ class RanjoorExplore extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            data: []
+            rawData: []
         }
     }
     fetchGanjoorData() {
         return fetch('https://facebook.github.io/react-native/movies.json')
             .then((response) => response.json())
             .then((responseJson) => {
-                alert(responseJson);
+                this.setState({rawData: responseJson})
             })
             .catch((error) => {
                 console.error(error);
@@ -54,7 +54,7 @@ class RanjoorExplore extends React.Component {
             <View style={styles.ExploreContainer}>
                 <ExploreHeader />
                 <ScrollView>
-                    <RanjoorExploreManager />
+                    <RanjoorExploreManager data = {this.state.rawData} />
                 </ScrollView>
             </View>
         );
