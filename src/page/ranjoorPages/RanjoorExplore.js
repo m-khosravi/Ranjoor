@@ -9,6 +9,7 @@ import {
 import Icon from 'react-native-vector-icons/FontAwesome';
 import ExploreCard from '../../elements/cards/ExploreCard';
 import ExploreHeader from '../../elements/headers/ExploreHeader';
+import RanjoorExploreManager from '../../resonseManagers/RanjoorExploreManager';
 
 class RanjoorExplore extends React.Component {
     static navigationOptions = {
@@ -26,7 +27,13 @@ class RanjoorExplore extends React.Component {
             color: 'white'
         }
     };
-
+    
+    constructor(props){
+        super(props);
+        this.state = {
+            data: []
+        }
+    }
     fetchGanjoorData() {
         return fetch('https://facebook.github.io/react-native/movies.json')
             .then((response) => response.json())
@@ -47,12 +54,9 @@ class RanjoorExplore extends React.Component {
             <View style={styles.ExploreContainer}>
                 <ExploreHeader />
                 <ScrollView>
-                    <ExploreCard />
-                    <ExploreCard />
+                    <RanjoorExploreManager />
                 </ScrollView>
-
             </View>
-
         );
     }
 }
