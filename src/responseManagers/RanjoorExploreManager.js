@@ -1,10 +1,10 @@
-import React, { Componenet } from 'react';
-import { Text } from 'react-native';
+import React, { Component } from 'react';
+import { View, Text } from 'react-native';
 import ExploreCard from '../elements/cards/ExploreCard';
 
-export default class RanjoorExploreManager extends Componenet {
-    
-    rawDataMapper() {
+export default class RanjoorExploreManager extends Component {
+
+    render() {
         let mappedData = this.props.data.map(() => {
             return (
                 <View>
@@ -12,9 +12,10 @@ export default class RanjoorExploreManager extends Componenet {
                 </View>
             )
         })
-    }
-
-    render() {
-        rawDataMapper();
+        return (
+            <View>
+                {mappedData}
+            </View>
+        )
     }
 }
