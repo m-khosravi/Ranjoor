@@ -5,16 +5,19 @@ import ExploreCard from '../elements/cards/ExploreCard';
 export default class RanjoorExploreManager extends Component {
 
     render() {
-        let mappedData = this.props.data.map(() => {
+        let mappedData = this.props.data.map(function(data) {
             return (
                 <View>
-                    <ExploreCard />
+                    <ExploreCard  poemBody={data.text}/>
                 </View>
             )
         })
         return (
             <View>
-                {mappedData}
+                <Text>
+                                    {mappedData}
+                </Text>
+
             </View>
         )
     }

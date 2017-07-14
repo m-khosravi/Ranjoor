@@ -26,3 +26,4 @@ Ganjoor with some difficulties in React-Native.
 * Modify the **RanjoorExplore** to display the data. -> (Almost Done)
 * Justify the content on different display sizes and compatibility test. -> (Done)
 * Setup the local database and API. -> (Done)
+* The JSON must be located at Poems section(starting id: 9150 to 9959)

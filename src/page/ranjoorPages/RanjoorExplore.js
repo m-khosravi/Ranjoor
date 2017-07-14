@@ -37,9 +37,10 @@ class RanjoorExplore extends React.Component {
     };
     
     fetchGanjoorData() {
-        return fetch('http://localhost:4003/api-docs/?url=/api-docs.json#/')
+        return fetch('http://localhost:4003/api-docs/?url=/api-docs.json#/9820')
             .then((response) => response.json())
             .then((responseJson) => {
+                console.log(responseJson)
                 this.setState({rawData: responseJson})
             })
             .catch((error) => {
@@ -55,10 +56,7 @@ class RanjoorExplore extends React.Component {
         return (
             <View style={styles.ExploreContainer}>
                 <ExploreHeader />
-                <ScrollView>
-                    <ExploreCard/>
-                    <ExploreCard/>
-                    <ExploreCard/>                    
+                <ScrollView>              
                     <RanjoorExploreManager data = {this.state.rawData} />
                 </ScrollView>
             </View>

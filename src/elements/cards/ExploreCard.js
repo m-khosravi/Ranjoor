@@ -9,17 +9,25 @@ import { Card, ListItem, Button, Icon, Avatar } from 'react-native-elements';
 
 export default class ExploreCard extends React.Component {
     render() {
+        /* Mapped data will be processed right here */
+        let mappedData = this.props.data.map(function(data) {
+            return (
+                <View>
+                    <ExploreCard  poemBody={data.text}/>
+                </View>
+            )
+        })
         return (
             <View style={{ flexDirection: 'row' }}>
                 <View style={{ flex: 1 }}></View>
                 <Card
                     containerStyle={{
-                        width:'85%', height: 250, backgroundColor: '#202026', shadowOpacity: 0.7,
+                        width: '85%', height: 250, backgroundColor: '#202026', shadowOpacity: 0.7,
                         shadowOffset: { height: 5 }, shadowColor: 'black', borderWidth: 0, borderRadius: 8, flexDirection: 'row'
                     }}
                     wrapperStyle={{ alignSelf: 'flex-end' }} >
 
-                    <View style={{ flex: 2, alignSelf:'flex-end'}}>
+                    <View style={{ flex: 2, alignSelf: 'flex-end' }}>
                         <View style={{ flexDirection: 'row', alignSelf: 'flex-end' }}>
                             <Text style={{ fontFamily: 'IRANSans', marginRight: 5, marginTop: 12, color: '#505056' }}>حافظ</Text>
                             <Avatar
@@ -36,8 +44,8 @@ export default class ExploreCard extends React.Component {
 
                         <View>
                             <Text style={{ alignSelf: 'flex-end', fontFamily: 'IRANSans', color: 'white', marginTop: '10%', marginRight: '5%' }}>
-                                ساقیا بده جامی زان شراب روحانی
-                                    </Text>
+                                {mappedData}
+                            </Text>
                             <Text style={{ alignSelf: 'flex-start', fontFamily: 'IRANSans', color: 'white' }}>
                                 تا دمی برآساییم زین حجاب ظلمانی
                             </Text>
