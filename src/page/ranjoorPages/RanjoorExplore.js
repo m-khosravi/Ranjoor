@@ -4,12 +4,12 @@ import {
     Text,
     View,
     Image,
-    ScrollView
+    ScrollView,
+    Alert
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import ExploreCard from '../../elements/cards/ExploreCard';
 import ExploreHeader from '../../elements/headers/ExploreHeader';
-import RanjoorExploreManager from '../../responseManagers/RanjoorExploreManager';
 
 class RanjoorExplore extends React.Component {
 
@@ -37,10 +37,9 @@ class RanjoorExplore extends React.Component {
     };
     
     fetchGanjoorData() {
-        return fetch('http://localhost:4003/api-docs/?url=/api-docs.json#/9820')
+        return fetch('https://jsonplaceholder.typicode.com/posts/1')
             .then((response) => response.json())
             .then((responseJson) => {
-                console.log(responseJson)
                 this.setState({rawData: responseJson})
             })
             .catch((error) => {
@@ -48,7 +47,7 @@ class RanjoorExplore extends React.Component {
             });
     }
 
-    componenetDidMount() {
+    componentDidMount() {
         this.fetchGanjoorData();
     }
 
@@ -57,7 +56,7 @@ class RanjoorExplore extends React.Component {
             <View style={styles.ExploreContainer}>
                 <ExploreHeader />
                 <ScrollView>              
-                    <RanjoorExploreManager data = {this.state.rawData} />
+                    <ExploreCard data = {this.state.rawData} />
                 </ScrollView>
             </View>
         );

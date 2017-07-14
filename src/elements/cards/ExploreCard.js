@@ -3,20 +3,20 @@ import {
     StyleSheet,
     Text,
     View,
-    Image
+    Image,
+    Alert
 } from 'react-native';
 import { Card, ListItem, Button, Icon, Avatar } from 'react-native-elements';
 
 export default class ExploreCard extends React.Component {
     render() {
         /* Mapped data will be processed right here */
-        let mappedData = this.props.data.map(function(data) {
+        let mappedData = this.props.data.map(function(data1) {
             return (
-                <View>
-                    <ExploreCard  poemBody={data.text}/>
-                </View>
+                   data1.title
             )
         })
+
         return (
             <View style={{ flexDirection: 'row' }}>
                 <View style={{ flex: 1 }}></View>
