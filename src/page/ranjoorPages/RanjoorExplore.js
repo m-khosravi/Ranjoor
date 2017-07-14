@@ -11,13 +11,6 @@ import ExploreCard from '../../elements/cards/ExploreCard';
 import ExploreHeader from '../../elements/headers/ExploreHeader';
 
 class RanjoorExplore extends React.Component {
-
-    constructor(){
-        super();
-        this.state(){
-            data: []
-        }
-    }
     static navigationOptions = {
         header: null,
         title: 'Explore',
@@ -38,7 +31,7 @@ class RanjoorExplore extends React.Component {
         return fetch('https://facebook.github.io/react-native/movies.json')
             .then((response) => response.json())
             .then((responseJson) => {
-                alert(responseJson)
+                alert(responseJson);
             })
             .catch((error) => {
                 console.error(error);
