@@ -20,3 +20,8 @@ Ganjoor with some difficulties in React-Native.
 ## Todo: 7.13.2017
 * Use a custom header with custom icon. -> (Done)
 * Style the status bar and fix minor problems in the cards. -> (Done)
+
+## Todo: 7.14.2017
+* Implement the logic to grab the data from **Ganjoor API**.
+* Modify the **RanjoorExplore** to display the data.
+* Justify the content on different display sizes and compatibility test.
