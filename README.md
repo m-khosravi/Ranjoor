@@ -22,6 +22,6 @@ Ganjoor with some difficulties in React-Native.
 * Style the status bar and fix minor problems in the cards. -> (Done)
 
 ## Todo: 7.14.2017
-* Implement the logic to grab the data from **Ganjoor API**.
-* Modify the **RanjoorExplore** to display the data.
-* Justify the content on different display sizes and compatibility test.
+* Implement the logic to grab the data from **Ganjoor API**. -> (Almost Done)
+* Modify the **RanjoorExplore** to display the data. -> (Almost Done)
+* Justify the content on different display sizes and compatibility test. -> (Done)
