@@ -19,7 +19,7 @@ class RanjoorExplore extends React.Component {
             rawData: []
         }
     }
-    
+
     static navigationOptions = {
         header: null,
         title: 'Explore',
@@ -56,6 +56,9 @@ class RanjoorExplore extends React.Component {
             <View style={styles.ExploreContainer}>
                 <ExploreHeader />
                 <ScrollView>
+                    <ExploreCard/>
+                    <ExploreCard/>
+                    <ExploreCard/>                    
                     <RanjoorExploreManager data = {this.state.rawData} />
                 </ScrollView>
             </View>
