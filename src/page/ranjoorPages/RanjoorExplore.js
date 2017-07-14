@@ -37,7 +37,7 @@ class RanjoorExplore extends React.Component {
     };
     
     fetchGanjoorData() {
-        return fetch('https://facebook.github.io/react-native/movies.json')
+        return fetch('http://localhost:4003/api-docs/?url=/api-docs.json#/')
             .then((response) => response.json())
             .then((responseJson) => {
                 this.setState({rawData: responseJson})
