@@ -8,26 +8,26 @@ import RanjoorSettings from './ranjoorPages/RanjoorSettings';
 import { NavigationComponenet } from 'react-native-material-bottom-navigation';
 
 const TabWrapper = TabNavigator({
-  Explore: {screen: RanjoorExplore},
-  Search: {screen: RanjoorSearch},
-  Favorites: {screen: RanjoorFavorites},
-  Settings: {screen: RanjoorSettings}
+  Explore: { screen: RanjoorExplore },
+  Search: { screen: RanjoorSearch },
+  Favorites: { screen: RanjoorFavorites },
+  Settings: { screen: RanjoorSettings }
 }, {
-  tabBarPosition: 'bottom',
-  swipeEnabled: true,
-	animationEnabled: true,
-  tabBarOptions: {
+    tabBarPosition: 'bottom',
+    swipeEnabled: true,
+    animationEnabled: true,
+    tabBarOptions: {
       style: {
         backgroundColor: '#202026',
       },
       pressColor: '#303036',
-			showLabel: false,
-			showIcon: true,
+      showLabel: false,
+      showIcon: true,
       indicatorStyle: {
         backgroundColor: '#4ab367'
       },
-			upperCaseLabel: false,
-		}
-});
+      upperCaseLabel: false,
+    }
+  });
 
 export default TabWrapper

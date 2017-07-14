@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import {
-  StyleSheet,
-  Text,
-  View,
-  Image
+    StyleSheet,
+    Text,
+    View,
+    Image
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { SearchBar } from 'react-native-elements';
@@ -23,35 +23,35 @@ class RanjoorSearch extends React.Component {
         tabBarIcon: ({ tintColor, focused }) => (
             <Icon
                 name="search"
-                size={ 24 } 
+                size={24}
                 color={focused ? '#4ab367' : 'white'}
             />
         ),
-        headerStyle: {backgroundColor: '#202026'},  
+        headerStyle: { backgroundColor: '#202026' },
         headerTitleStyle: {
-            fontFamily:'IRANSans_UltraLight',
+            fontFamily: 'IRANSans_UltraLight',
             color: 'white',
-            alignSelf:'flex-end'
+            alignSelf: 'flex-end'
         },
     };
     render() {
-        return(
+        return (
             <View style={styles.SearchContainer}>
                 <SearchBar
-                 placeholder='　جستجوی پیشرفته'
-                 round={true}
-                 onChangeText={() => { textChanged = true }}
-                 showLoadingIcon={true}
-                 containerStyle={{backgroundColor:'#202026'}}
-                 inputStyle={{backgroundColor:'#303036', fontFamily: 'IRANSans_UltraLight'}}
-                 />
-                <View style={{flex:2}}></View>
-                <View style={styles.logoContainer}> 
+                    placeholder='　جستجوی پیشرفته'
+                    round={true}
+                    onChangeText={() => { textChanged = true }}
+                    showLoadingIcon={true}
+                    containerStyle={{ backgroundColor: '#202026' }}
+                    inputStyle={{ backgroundColor: '#303036', fontFamily: 'IRANSans_UltraLight' }}
+                />
+                <View style={{ flex: 2 }}></View>
+                <View style={styles.logoContainer}>
                     <Image style={styles.logo}
-                            source={require('../../img/logo/Ranjoor_white.png')}
+                        source={require('../../img/logo/Ranjoor_white.png')}
                     />
                 </View>
-                <View style={{flex:2}}></View>
+                <View style={{ flex: 2 }}></View>
             </View>
         );
     }

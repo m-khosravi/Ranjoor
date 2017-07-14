@@ -1,31 +1,31 @@
 import React, { Component } from 'react';
 import {
-  StyleSheet,
-  Text,
-  View,
-  Image
+    StyleSheet,
+    Text,
+    View,
+    Image
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 class RanjoorFavorites extends React.Component {
     static navigationOptions = {
         header: null,
-        tabBarIcon: ({ tintColor,focused }) => (
+        tabBarIcon: ({ tintColor, focused }) => (
             <Icon
                 name="star"
-                size={ 24 } 
+                size={24}
                 color={focused ? '#4ab367' : 'white'}
             />
         ),
         title: 'Favorites',
-        headerStyle: { backgroundColor: '#202026'},
+        headerStyle: { backgroundColor: '#202026' },
         headerTitleStyle: {
             color: 'white'
         },
         headerRight: true
     };
     render() {
-        return(
+        return (
             <View style={styles.FavoritesContainer}>
                 <Text>This is the Ranjoor's Favorites page</Text>
             </View>

@@ -6,10 +6,9 @@ import TabWrapper from './page/RanjoorPagesWrapper';
 
 
 class Ranjoor extends Component {
-  render()
-  {
+  render() {
     return (
-      <SplashScreen/>
+      <SplashScreen />
     )
   }
 }

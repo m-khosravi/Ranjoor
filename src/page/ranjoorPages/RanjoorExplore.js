@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import {
-  StyleSheet,
-  Text,
-  View,
-  Image,
-  ScrollView
+    StyleSheet,
+    Text,
+    View,
+    Image,
+    ScrollView
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import ExploreCard from '../../elements/cards/ExploreCard';
@@ -14,26 +14,26 @@ class RanjoorExplore extends React.Component {
     static navigationOptions = {
         header: null,
         title: 'Explore',
-        tabBarIcon: ({ tintColor, focused  }) => (
+        tabBarIcon: ({ tintColor, focused }) => (
             <Icon
                 name="bandcamp"
-                size={ 24 } 
+                size={24}
                 color={focused ? '#4ab367' : 'white'}
             />
         ),
-        headerStyle: { backgroundColor: '#202026' },  
+        headerStyle: { backgroundColor: '#202026' },
         headerTitleStyle: {
             color: 'white'
-        }     
+        }
     };
     render() {
-        return(
+        return (
             <View style={styles.ExploreContainer}>
                 <ExploreHeader />
-              <ScrollView>
-                <ExploreCard />  
-                <ExploreCard />  
-              </ScrollView>
+                <ScrollView>
+                    <ExploreCard />
+                    <ExploreCard />
+                </ScrollView>
 
             </View>
 
