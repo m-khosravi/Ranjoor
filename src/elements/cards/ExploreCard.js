@@ -17,11 +17,9 @@ export default class ExploreCard extends Component {
                     <View style={{ flex: 1 }}></View>
                     <Card
                         containerStyle={{
-                            width: '85%', height: 250, backgroundColor: '#202026', shadowOpacity: 0.7,
+                             height: 250, backgroundColor: '#202026', shadowOpacity: 0.7,
                             shadowOffset: { height: 5 }, shadowColor: 'black', borderWidth: 0, borderRadius: 8, flexDirection: 'row'}}
                         wrapperStyle={{width:'100%', backgroundColor:'green'}}                            
-                            
-                            
                             >
                         <Grid>
                             <Row style={{width:'100%', backgroundColor:'red'}}>
@@ -46,16 +44,17 @@ export default class ExploreCard extends Component {
                                     </Text>
                                 </View>
                             </Row>
-                            <Row style={{ justifyContent: 'space-between' }}>
-                                <Col style={{ flexDirection: 'row' }}>
+                            <Row style={{ backgroundColor:'purple', flexDirection:'row'}}>
+                                <View style={{backgroundColor:'blue', flexDirection:'row', flex:1}}>
                                     <Icon
                                         name='favorite' size={24} color="#34343a" style={{ marginLeft: 5 }}
                                     />
                                     <Icon
                                         name='grade' size={24} color="#34343a" style={{ marginLeft: 5 }}
                                     />
-                                </Col>
-                                <Col style={{ flexDirection: 'row' }}>
+                                </View>
+                                <View style={{flex:1}}></View>
+                                <View style={{backgroundColor:'pink', flex:1}}>
                                     <Button
                                         textStyle={{ fontSize: 15 }}
                                         iconRight
@@ -67,7 +66,7 @@ export default class ExploreCard extends Component {
                                         }}
                                         title='ادامه مطلب'
                                     />
-                                </Col>
+                                </View>
                             </Row>
                         </Grid>
                     </Card>
