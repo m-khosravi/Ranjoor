@@ -19,10 +19,10 @@ export default class ExploreCard extends Component {
                         containerStyle={{
                              height: 250, backgroundColor: '#202026', shadowOpacity: 0.7,
                             shadowOffset: { height: 5 }, shadowColor: 'black', borderWidth: 0, borderRadius: 8, flexDirection: 'row'}}
-                        wrapperStyle={{width:'100%', backgroundColor:'green'}}                            
+                        wrapperStyle={{width:'100%'}}                            
                             >
                         <Grid>
-                            <Row style={{width:'100%', backgroundColor:'red'}}>
+                            <Row style={{justifyContent:'flex-start'}}>
                                 <View style={{ flexDirection: 'row', alignSelf: 'flex-start' }}>
                                     <Text style={{ fontFamily: 'IRANSans', marginRight: 5, marginTop: 12, color: '#505056' }}>حافظ</Text>
                                     <Avatar
@@ -30,7 +30,7 @@ export default class ExploreCard extends Component {
                                         rounded
                                         source={require('../../img/avatars/ferdowsi.jpg')}
                                         containerStyle={{
-                                            alignSelf: 'flex-end', marginRight: 15,
+                                            alignSelf: 'flex-start', marginRight: 15,
                                             shadowOpacity: 0.7,
                                             shadowOffset: { height: 5 }, shadowColor: 'black'
                                         }}
@@ -39,13 +39,13 @@ export default class ExploreCard extends Component {
                             </Row>
                             <Row>
                                 <View>
-                                    <Text style={{ alignSelf: 'flex-end', fontFamily: 'IRANSans', color: 'white', marginTop: '10%', marginRight: '5%' }}>
+                                    <Text style={{ alignSelf: 'flex-start', fontFamily: 'IRANSans', color: 'white' }}>
                                         {data1.title}
                                     </Text>
                                 </View>
                             </Row>
-                            <Row style={{ backgroundColor:'purple', flexDirection:'row'}}>
-                                <View style={{backgroundColor:'blue', flexDirection:'row', flex:1}}>
+                            <Row style={{ flexDirection:'row'}}>
+                                <View style={{ flexDirection:'row', flex:1}}>
                                     <Icon
                                         name='favorite' size={24} color="#34343a" style={{ marginLeft: 5 }}
                                     />
@@ -54,7 +54,7 @@ export default class ExploreCard extends Component {
                                     />
                                 </View>
                                 <View style={{flex:1}}></View>
-                                <View style={{backgroundColor:'pink', flex:1}}>
+                                <View style={{flex:1}}>
                                     <Button
                                         textStyle={{ fontSize: 15 }}
                                         iconRight
