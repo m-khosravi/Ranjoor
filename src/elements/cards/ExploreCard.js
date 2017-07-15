@@ -18,10 +18,13 @@ export default class ExploreCard extends Component {
                     <Card
                         containerStyle={{
                             width: '85%', height: 250, backgroundColor: '#202026', shadowOpacity: 0.7,
-                            shadowOffset: { height: 5 }, shadowColor: 'black', borderWidth: 0, borderRadius: 8, flexDirection: 'row'
-                        }}>
+                            shadowOffset: { height: 5 }, shadowColor: 'black', borderWidth: 0, borderRadius: 8, flexDirection: 'row'}}
+                        wrapperStyle={{width:'100%', backgroundColor:'green'}}                            
+                            
+                            
+                            >
                         <Grid>
-                            <Row>
+                            <Row style={{width:'100%', backgroundColor:'red'}}>
                                 <View style={{ flexDirection: 'row', alignSelf: 'flex-start' }}>
                                     <Text style={{ fontFamily: 'IRANSans', marginRight: 5, marginTop: 12, color: '#505056' }}>حافظ</Text>
                                     <Avatar
