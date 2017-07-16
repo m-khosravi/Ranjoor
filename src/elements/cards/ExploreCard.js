@@ -17,12 +17,12 @@ export default class ExploreCard extends Component {
                     <View style={{ flex: 1 }}></View>
                         <Card
                             containerStyle={{
-                                height: 250, backgroundColor: '#202026', shadowOpacity: 0.7,
+                                height: 180, backgroundColor: '#202026', shadowOpacity: 0.7,
                                 shadowOffset: { height: 5 }, shadowColor: 'black', borderWidth: 0, borderRadius: 8, flexDirection: 'row'}}
                             wrapperStyle={{width:'100%', flexDirection:'column'}}                            
                                 >
                             <Grid>
-                                <Row style={{flexDirection:'row', justifyContent:'flex-end'}}>
+                                <Row style={{flexDirection:'row', justifyContent:'flex-end', flex:1}}>
                                     <View style={{ flexDirection: 'row', alignSelf: 'flex-end' }}>
                                         <Text style={{ fontFamily: 'IRANSans', marginRight: 5, marginTop: 12, color: '#505056' }}>حافظ</Text>
                                         <Avatar
@@ -30,21 +30,21 @@ export default class ExploreCard extends Component {
                                             rounded
                                             source={require('../../img/avatars/ferdowsi.jpg')}
                                             containerStyle={{
-                                                alignSelf: 'flex-start', marginRight: 15,
+                                                alignSelf: 'flex-start',
                                                 shadowOpacity: 0.7,
                                                 shadowOffset: { height: 5 }, shadowColor: 'black'
                                             }}
                                         />
                                     </View>
                                 </Row>
-                                <Row>
+                                <Row style={{flexDirection:'row',alignSelf:'flex-end', flex:1}}>
                                     <View>
-                                        <Text style={{ alignSelf: 'flex-start', fontFamily: 'IRANSans', color: 'white' }}>
-                                            {data1.title}
+                                        <Text style={{ alignSelf: 'flex-end', fontFamily: 'IRANSans', color: 'white' }}>
+                                            {data1.name}
                                         </Text>
                                     </View>
                                 </Row>
-                                <Row style={{ flexDirection:'row'}}>
+                                <Row style={{ flexDirection:'row', flex:1}}>
                                     <View style={{ flexDirection:'row', flex:1}}>
                                         <Icon
                                             name='favorite' size={24} color="#34343a" style={{ marginLeft: 5 }}

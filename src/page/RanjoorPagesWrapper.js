@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { StyleSheet } from 'react-native';
 import { TabNavigator } from 'react-navigation';
 import RanjoorExplore from './ranjoorPages/RanjoorExplore';
+import RanjoorPoets from './ranjoorPages/RanjoorPoets';
 import RanjoorSearch from './ranjoorPages/RanjoorSearch';
 import RanjoorFavorites from './ranjoorPages/RanjoorFavorites';
 import RanjoorSettings from './ranjoorPages/RanjoorSettings';
@@ -9,6 +10,7 @@ import { NavigationComponenet } from 'react-native-material-bottom-navigation';
 
 const TabWrapper = TabNavigator({
   Explore: { screen: RanjoorExplore },
+  Poets: { screen: RanjoorPoets },
   Search: { screen: RanjoorSearch },
   Favorites: { screen: RanjoorFavorites },
   Settings: { screen: RanjoorSettings }

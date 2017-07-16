@@ -37,7 +37,7 @@
             };
             
             fetchGanjoorData() {
-                return fetch('https://jsonplaceholder.typicode.com/posts')
+                return fetch('http://172.25.136.231:4003/v1/poets')
                     .then((response) => response.json())
                     .then((responseJson) => {
                         this.setState({rawData: responseJson})
