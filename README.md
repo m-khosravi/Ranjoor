@@ -29,9 +29,9 @@ Ganjoor with some difficulties in React-Native.
 * The JSON must be located at Poems section(starting id: 9150 to 9959)
 
 ## Todo: 7.15.2017
-* Improve cards interface
-* Increase device compatibility
+* Improve cards interface -> (Done)
+* Increase device compatibility -> (Done)
 
 ## Todo: 7.16.2017
-* Connect the application to the Ganjoor's database
-* Server the database on the Ranjoor's UI
+* Connect the application to the Ganjoor's database -> (Being Done)
+* Serve the database on the Ranjoor's UI -> (Being Done)
