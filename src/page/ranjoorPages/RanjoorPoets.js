@@ -3,31 +3,59 @@ import {
     StyleSheet,
     Text,
     View,
-    Image
+    Image,
+    Alert,
+    ScrollView
 } from 'react-native';
+import { Card, ListItem, Button, Avatar, Grid, Row, Col } from 'react-native-elements';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import PoetCard from '../../elements/cards/PoetCard';
 
 class RanjoorPoets extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            rawData: []
+        }
+    }
+
     static navigationOptions = {
         header: null,
+        title: 'Poets',
         tabBarIcon: ({ tintColor, focused }) => (
             <Icon
-                name="star"
+                name="ils"
                 size={24}
                 color={focused ? '#4ab367' : 'white'}
             />
         ),
-        title: 'Favorites',
         headerStyle: { backgroundColor: '#202026' },
         headerTitleStyle: {
             color: 'white'
-        },
-        headerRight: true
+        }
     };
+
+    fetchGanjoorData() {
+        return fetch('http://172.25.136.231:4003/v1/poets')
+            .then((response) => response.json())
+            .then((responseJson) => {
+                this.setState({ rawData: responseJson })
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+    }
+
+    componentDidMount() {
+        this.fetchGanjoorData();
+    }
+
     render() {
         return (
             <View style={styles.PoetsContainer}>
-                <Text>This is the Ranjoor's Favorites page</Text>
+                <ScrollView>
+                    <PoetCard data={this.state.rawData} />
+                </ScrollView>
             </View>
         );
     }

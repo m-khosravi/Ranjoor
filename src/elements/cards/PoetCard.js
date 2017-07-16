@@ -1,0 +1,94 @@
+import React, { Component } from 'react';
+import {
+    StyleSheet,
+    Text,
+    View,
+    Image,
+    Alert
+} from 'react-native';
+import { Card, ListItem, Button, Avatar, Grid, Row, Col } from 'react-native-elements';
+import Icon from 'react-native-vector-icons/FontAwesome';
+
+class PoetCard extends React.Component {
+    render() {
+        /* Mapped data will be processed right here */
+        let mappedData = this.props.data.map(function (data1, index) {
+            return (
+                <View style={{flexDirection:'row'}}>
+                    <View style={{ flex: 1 }}></View>
+                        <Card
+                            containerStyle={{
+                                height: 180, backgroundColor: '#202026', shadowOpacity: 0.7,
+                                shadowOffset: { height: 5 }, shadowColor: 'black', borderWidth: 0, borderRadius: 8, flexDirection: 'row'}}
+                            wrapperStyle={{width:'100%', flexDirection:'column'}}                            
+                                >
+                            <Grid>
+                                <Row style={{flexDirection:'row', justifyContent:'flex-end', flex:1}}>
+                                    <View style={{ flexDirection: 'row', alignSelf: 'flex-end' }}>
+                                        <Text style={{ fontFamily: 'IRANSans', marginRight: 5, marginTop: 12, color: '#505056' }}>حافظ</Text>
+                                        <Avatar
+                                            medium
+                                            rounded
+                                            source={require('../../img/avatars/ferdowsi.jpg')}
+                                            containerStyle={{
+                                                alignSelf: 'flex-start',
+                                                shadowOpacity: 0.7,
+                                                shadowOffset: { height: 5 }, shadowColor: 'black'
+                                            }}
+                                        />
+                                    </View>
+                                </Row>
+                                <Row style={{flexDirection:'row',alignSelf:'flex-end', flex:1}}>
+                                    <View>
+                                        <Text style={{ alignSelf: 'flex-end', fontFamily: 'IRANSans', color: 'white' }}>
+                                            {data1.name}
+                                        </Text>
+                                    </View>
+                                </Row>
+                                <Row style={{ flexDirection:'row', flex:1}}>
+                                    <View style={{ flexDirection:'row', flex:1}}>
+                                        <Icon
+                                            name='favorite' size={24} color="#34343a" style={{ marginLeft: 5 }}
+                                        />
+                                        <Icon
+                                            name='grade' size={24} color="#34343a" style={{ marginLeft: 5 }}
+                                        />
+                                    </View>
+                                    <View style={{flex:1}}></View>
+                                    <View style={{flex:1}}>
+                                        <Button
+                                            textStyle={{ fontSize: 15 }}
+                                            iconRight
+                                            backgroundColor='#4ab367'
+                                            fontFamily='IRANSans_UltraLight'
+                                            buttonStyle={{
+                                                height: 15, width: 100,
+                                                borderRadius: 8
+                                            }}
+                                            title='ادامه مطلب'
+                                        />
+                                    </View>
+                                </Row>
+                            </Grid>
+                        </Card>                
+                    <View style={{ flex: 1 }}></View>
+                </View>
+            )
+        })
+        return (
+            <View>
+                {mappedData}
+            </View>
+        )
+    }
+}
+
+var styles = StyleSheet.create({
+    PoetsContainer: {
+        backgroundColor: '#303036',
+        height: '100%',
+        width: '100%'
+    }
+})
+
+export default PoetCard
