@@ -19,11 +19,11 @@ export default class ExploreHeader extends Component {
                 />
                 <View style={{backgroundColor:'#202026', height:60,}}>
                     <Header
-                    leftComponent={{ icon: 'menu', color: '#fff', height:48, width:28 }}
+                    leftComponent={{ icon: 'search', color: '#fff', height:48, width:28 }}
                     centerComponent={<Image style={styles.logo}
                                             source={require('../../img/logo/Ranjoor_white_wide.png')}
                                     />} 
-                    rightComponent={{ icon: 'home', color: '#fff', height:48, width:28  }}
+                    rightComponent={{ icon: 'brightness-6', color: '#fff', height:48, width:28  }}
                     />
                 </View>
                 <View>
