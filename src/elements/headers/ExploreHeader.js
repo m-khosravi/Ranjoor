@@ -7,7 +7,22 @@ import {
   StatusBar
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import { Header, Divider } from 'react-native-elements';
+import { Header, Divider, Button } from 'react-native-elements';
+
+const searchButton = (<Button
+  small
+  icon={{name: 'search', type: 'font-awesome', color:'#909096'}}
+  borderRadius={5}
+  backgroundColor='transparent'
+   />)
+
+const channelButton = (<Button
+  small
+  icon={{name: 'telegram', type: 'font-awesome', color:'#909096'}}
+  backgroundColor='transparent' 
+  borderRadius={5}
+  iconRight={true}
+/>)
 
 export default class ExploreHeader extends Component {
     render(){
@@ -19,11 +34,10 @@ export default class ExploreHeader extends Component {
                 />
                 <View style={{backgroundColor:'#202026', height:60,}}>
                     <Header
-                    leftComponent={{ icon: 'search', color: '#909096', height:48, width:28 }}
+                    leftComponent={searchButton}
                     centerComponent={<Image style={styles.logo}
                                             source={require('../../img/logo/Ranjoor_white_wide.png')}
                                     />} 
-                    rightComponent={{ icon: 'menu', color: '#909096', height:48, width:28}}
                     />
                 </View>
                 <View>
