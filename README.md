@@ -33,5 +33,9 @@ Ganjoor with some difficulties in React-Native.
 * Increase device compatibility -> (Done)
 
 ## Todo: 7.16.2017
-* Connect the application to the Ganjoor's database -> (Being Done)
-* Serve the database on the Ranjoor's UI -> (Being Done)
+* Connect the application to the Ganjoor's database -> (Done)
+* Serve the database on the Ranjoor's UI -> (Done)
+
+## Todo: 7.17.2017
+* Improve the poets page -> (Being Done)
+* Solve the container problem -> (Being Done)
