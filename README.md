@@ -37,5 +37,6 @@ Ganjoor with some difficulties in React-Native.
 * Serve the database on the Ranjoor's UI -> (Done)
 
 ## Todo: 7.17.2017
-* Improve the poets page -> (Being Done)
-* Solve the container problem -> (Being Done)
+* Improve the poets page -> (Critical)
+* Solve the container problem -> (Critical)
+* Implement the search tab on the left buton at the top -> (Being Done)
