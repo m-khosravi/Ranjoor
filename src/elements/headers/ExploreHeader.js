@@ -6,8 +6,7 @@ import {
   Image,
   StatusBar
 } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
-import { Header, Divider, Button } from 'react-native-elements';
+import { Header, Divider, Button, Icon } from 'react-native-elements';
 
 const searchButton = (<Button
   small
@@ -32,9 +31,9 @@ export default class ExploreHeader extends Component {
                     backgroundColor="#f0f0f0"
                     barStyle="dark-content"
                 />
-                <View style={{flexDirection:'column', backgroundColor:'#fafafa', height:55,}}>
+                <View style={{flexDirection:'column', backgroundColor:'#fafafa', height:50}}>
                     <Header
-                    centerComponent={<Text style={{fontFamily:'vladmir', fontSize:28}}>Ranjoor</Text>}
+                    centerComponent={<Text style={{fontSize:30, fontFamily:'Vlad_script', color:'black', marginBottom:8}}>DaroDivar</Text>} 
                     />
                 </View>
                 <View>
@@ -46,10 +45,3 @@ export default class ExploreHeader extends Component {
         )
     }
 }
-
-var styles = StyleSheet.create({
-    logo: {
-        width: 50,
-        height: 50,
-    }
-})
