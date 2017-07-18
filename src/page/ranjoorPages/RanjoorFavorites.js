@@ -15,7 +15,7 @@ class RanjoorFavorites extends React.Component {
             <Icon
                 name="star"
                 size={24}
-                color={focused ? '#4ab367' : 'white'}
+                color={focused ? 'black' : '#202026'}
             />
         ),
         title: 'Favorites',

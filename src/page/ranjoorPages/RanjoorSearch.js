@@ -24,7 +24,7 @@ class RanjoorSearch extends React.Component {
             <Icon
                 name="search"
                 size={24}
-                color={focused ? '#4ab367' : 'white'}
+                color={focused ? 'black' : '#202026'}
             />
         ),
         headerStyle: { backgroundColor: '#202026' },

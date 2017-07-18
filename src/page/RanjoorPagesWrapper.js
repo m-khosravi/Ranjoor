@@ -18,7 +18,7 @@ const TabWrapper = TabNavigator({
     animationEnabled: true,
     tabBarOptions: {
       style: {
-        backgroundColor: '#202026',
+        backgroundColor: '#fafafa',
       },
       pressColor: '#303036',
       showLabel: false,
