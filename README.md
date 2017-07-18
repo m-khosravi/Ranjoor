@@ -44,3 +44,4 @@ Ganjoor with some difficulties in React-Native.
 ## Todo: 7.18.2017
 * Improve navigation
 * Writing a new API for the database(Thanks to pi0)
+* Improve header on all tabs
