@@ -31,9 +31,11 @@ export default class ExploreHeader extends Component {
                     backgroundColor="#f0f0f0"
                     barStyle="dark-content"
                 />
-                <View style={{flexDirection:'column', backgroundColor:'#fafafa', height:50}}>
+                <View style={{flexDirection:'column', backgroundColor:'#fafafa', height:55}}>
                     <Header
-                    centerComponent={<Text style={{fontSize:30, fontFamily:'Vladimir', color:'black', marginBottom:8}}>DaroDivar</Text>} 
+                    centerComponent={
+                        <Text style={{fontSize:35, fontFamily:'Vladimir', color:'black', marginBottom:8}}>Ganjoor</Text>
+                        } 
                     />
                 </View>
                 <View>
