@@ -36,7 +36,7 @@ export default class ExploreHeader extends Component {
                     <Header
                     centerComponent={<Image style={styles.logo}
                                             source={require('../../img/logo/Ranjoor_white_wide.png')}
-                                   />} 
+                                    />} 
                     />
                 </View>
                 <View>
