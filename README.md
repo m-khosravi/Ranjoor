@@ -40,3 +40,7 @@ Ganjoor with some difficulties in React-Native.
 * Improve the poets page -> (Critical)
 * Solve the container problem -> (Critical)
 * Implement the search tab on the left buton at the top -> (Being Done)
+
+## Todo: 7.18.2017
+* Improve navigation
+* Writing a new API for the database(Thanks to pi0)
