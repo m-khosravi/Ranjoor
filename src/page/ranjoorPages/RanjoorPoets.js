@@ -10,6 +10,7 @@ import {
 import { Card, ListItem, Button, Avatar, Grid, Row, Col } from 'react-native-elements';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import PoetCard from '../../elements/cards/PoetCard';
+import PoetHeader from '../../elements/headers/PoetHeader';
 
 class RanjoorPoets extends React.Component {
     constructor() {
@@ -53,6 +54,7 @@ class RanjoorPoets extends React.Component {
     render() {
         return (
             <View style={styles.PoetsContainer}>
+                <PoetHeader />
                 <ScrollView>
                     <PoetCard data={this.state.rawData} />
                 </ScrollView>

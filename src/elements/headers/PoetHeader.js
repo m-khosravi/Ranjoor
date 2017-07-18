@@ -24,7 +24,7 @@ const channelButton = (<Button
   iconRight={true}
 />)
 
-export default class ExploreHeader extends Component {
+export default class PoetHeader extends Component {
     render(){
         return(
             <View>

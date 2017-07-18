@@ -8,6 +8,7 @@ import {
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { Header, Divider, Button } from 'react-native-elements';
+import SettingHeader from '../../elements/headers/SettingHeader';
 
 const searchButton = (<Button
   small
@@ -24,10 +25,11 @@ const channelButton = (<Button
   iconRight={true}
 />)
 
-export default class ExploreHeader extends Component {
+export default class SettingHeader extends Component {
     render(){
         return(
             <View>
+                <SettingHeader />
                 <StatusBar
                     backgroundColor="#1b1a20"
                     barStyle="light-content"

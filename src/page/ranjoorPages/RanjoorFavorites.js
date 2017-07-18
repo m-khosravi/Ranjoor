@@ -6,6 +6,7 @@ import {
     Image
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import FavoriteHeader from '../../elements/headers/FavoriteHeader';
 
 class RanjoorFavorites extends React.Component {
     static navigationOptions = {
@@ -27,6 +28,7 @@ class RanjoorFavorites extends React.Component {
     render() {
         return (
             <View style={styles.FavoritesContainer}>
+                <FavoriteHeader />
                 <Text>This is the Ranjoor's Favorites page</Text>
             </View>
         );
