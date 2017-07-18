@@ -29,14 +29,12 @@ export default class ExploreHeader extends Component {
         return(
             <View>
                 <StatusBar
-                    backgroundColor="#1b1a20"
-                    barStyle="light-content"
+                    backgroundColor="#f0f0f0"
+                    barStyle="dark-content"
                 />
-                <View style={{backgroundColor:'#202026', height:60,}}>
+                <View style={{flexDirection:'column', backgroundColor:'#fafafa', height:55,}}>
                     <Header
-                    centerComponent={<Image style={styles.logo}
-                                            source={require('../../img/logo/Ranjoor_white_wide.png')}
-                                    />} 
+                    centerComponent={<Text style={{fontFamily:'vladmir', fontSize:28}}>Ranjoor</Text>}
                     />
                 </View>
                 <View>
@@ -51,8 +49,7 @@ export default class ExploreHeader extends Component {
 
 var styles = StyleSheet.create({
     logo: {
-        width: 85,
-        height: 40,
-        marginBottom:6
+        width: 50,
+        height: 50,
     }
 })

@@ -29,10 +29,10 @@ export default class PoetHeader extends Component {
         return(
             <View>
                 <StatusBar
-                    backgroundColor="#1b1a20"
-                    barStyle="light-content"
+                    backgroundColor="#f0f0f0"
+                    barStyle="dark-content"
                 />
-                <View style={{backgroundColor:'#202026', height:60,}}>
+                <View style={{backgroundColor:'#fafafa', height:60,}}>
                     <Header
                     centerComponent={<Image style={styles.logo}
                                             source={require('../../img/logo/Ranjoor_white_wide.png')}
