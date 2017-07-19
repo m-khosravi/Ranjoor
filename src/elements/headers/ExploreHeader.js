@@ -33,6 +33,15 @@ export default class ExploreHeader extends Component {
                 />
                 <View style={{ flexDirection: 'column', backgroundColor: '#fafafa', height: 50 }}>
                     <Header
+                        rightComponent={
+                            <Icon
+                                containerStyle={{marginBottom:'63%'}}
+                                size={25}
+                                name='heartbeat'
+                                type='font-awesome'
+                                color='black'
+                                onPress={() => console.log('hello')} />
+                        }
                         centerComponent={
                             <Text style={{ fontSize: 35, fontFamily: 'Mj_Moshfegh', color: 'black', marginBottom: 6 }}>گنجور</Text>
                         }
