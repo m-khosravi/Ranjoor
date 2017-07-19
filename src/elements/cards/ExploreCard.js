@@ -17,15 +17,15 @@ export default class ExploreCard extends Component {
                     <View style={{ flex: 1 }}></View>
                     <Card
                         containerStyle={{
-                            height: 180, backgroundColor: '#202026', shadowOpacity: 0.7,
+                            height: 250, backgroundColor: '#fafafa', shadowOpacity: 0.7,
                             shadowOffset: { height: 5 }, shadowColor: 'black', borderWidth: 0, borderRadius: 8, flexDirection: 'row'
                         }}
                         wrapperStyle={{ width: '100%', flexDirection: 'column' }}
                     >
                         <Grid>
-                            <Row style={{ flexDirection: 'row', justifyContent: 'flex-end', flex: 1 }}>
-                                <View style={{ flexDirection: 'row', alignSelf: 'flex-end' }}>
-                                    <Text style={{ fontFamily: 'IRANSans', marginRight: 5, marginTop: 12, color: '#505056' }}>حافظ</Text>
+                            <Row style={{ flexDirection: 'row', justifyContent: 'flex-end', flex: 1}}>
+                                <View style={{ flexDirection: 'row', alignSelf: 'flex-end'}}>
+                                    <Text style={{ fontFamily: 'Mj_Moshfegh', marginRight: 5, marginTop: 12, color: '#505056' }}>حافظ</Text>
                                     <Avatar
                                         medium
                                         rounded
@@ -40,12 +40,12 @@ export default class ExploreCard extends Component {
                             </Row>
                             <Row style={{ flexDirection: 'row', alignSelf: 'flex-end', flex: 1 }}>
                                 <View>
-                                    <Text style={{ alignSelf: 'flex-end', fontFamily: 'IRANSans', color: 'white' }}>
+                                    <Text style={{ alignSelf: 'flex-end', fontFamily: 'IRANSans', color: 'black' }}>
                                         {data1.name}
                                     </Text>
                                 </View>
                             </Row>
-                            <Row style={{ flexDirection: 'row', flex: 1 }}>
+                            <Row style={{ flexDirection: 'row', flex: 1, alignSelf:'flex-end', backgroundColor:'black'}}>
                                 <View style={{ flexDirection: 'row', flex: 1 }}>
                                     <Icon
                                         name='favorite' size={24} color="#34343a" style={{ marginLeft: 5 }}
