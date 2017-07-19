@@ -10,6 +10,7 @@ import {
 import Icon from 'react-native-vector-icons/FontAwesome';
 import ExploreCard from '../../elements/cards/ExploreCard';
 import ExploreHeader from '../../elements/headers/ExploreHeader';
+import { SearchBar } from 'react-native-elements';
 
 class RanjoorExplore extends Component {
 
@@ -37,7 +38,7 @@ class RanjoorExplore extends Component {
     };
 
     fetchGanjoorData() {
-        return fetch('http://172.25.136.231:4003/v1/poets')
+        return fetch('https://jsonplaceholder.typicode.com/posts/')
             .then((response) => response.json())
             .then((responseJson) => {
                 this.setState({ rawData: responseJson })

@@ -38,20 +38,12 @@ class RanjoorSearch extends React.Component {
         return (
             <View style={styles.SearchContainer}>
                 <SearchBar
-                    placeholder='　جستجوی پیشرفته'
-                    round={true}
-                    onChangeText={() => { textChanged = true }}
-                    showLoadingIcon={true}
-                    containerStyle={{ backgroundColor: '#202026' }}
-                    inputStyle={{ backgroundColor: '#303036', fontFamily: 'IRANSans_UltraLight' }}
-                />
-                <View style={{ flex: 2 }}></View>
-                <View style={styles.logoContainer}>
-                    <Image style={styles.logo}
-                        source={require('../../img/logo/Ranjoor_white.png')}
-                    />
-                </View>
-                <View style={{ flex: 2 }}></View>
+                    inputStyle={{fontFamily:'IRANSans', fontSize:11, backgroundColor:'black'}}
+                    containerStyle={{backgroundColor:'#fafafa', borderRadius:25, width:'90%',
+                    marginTop:10, alignSelf:'center'}}
+                    lightTheme
+                    round
+                    placeholder='جستجو در گنجینه...' />
             </View>
         );
     }
