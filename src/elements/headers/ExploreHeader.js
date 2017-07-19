@@ -31,10 +31,10 @@ export default class ExploreHeader extends Component {
                     backgroundColor="#f0f0f0"
                     barStyle="dark-content"
                 />
-                <View style={{flexDirection:'column', backgroundColor:'#fafafa', height:55}}>
+                <View style={{flexDirection:'column', backgroundColor:'#fafafa', height:50}}>
                     <Header
                     centerComponent={
-                        <Text style={{fontSize:35, fontFamily:'Vladimir', color:'black', marginBottom:8}}>Ganjoor</Text>
+                        <Text style={{fontSize:35, fontFamily:'Mj_Moshfegh', color:'black', marginBottom:6}}>گنجور</Text>
                         } 
                     />
                 </View>
