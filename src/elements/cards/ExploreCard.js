@@ -7,6 +7,7 @@ import {
     Alert
 } from 'react-native';
 import { Card, ListItem, Button, Icon, Avatar, Grid, Row, Col } from 'react-native-elements';
+import Router from 'react-native-simple-router';
 
 export default class ExploreCard extends Component {
     render() {
@@ -23,9 +24,9 @@ export default class ExploreCard extends Component {
                         wrapperStyle={{ width: '100%', flexDirection: 'column' }}
                     >
                         <Grid>
-                            <Row style={{ flexDirection: 'row', justifyContent: 'flex-end', flex: 1}}>
-                                <View style={{ flexDirection: 'row', alignSelf: 'flex-end'}}>
-                                    <Text style={{ fontFamily:'IRANSans', marginRight: 5, marginTop: 12, color: '#505056' }}>حافظ</Text>
+                            <Row style={{ flexDirection: 'row', justifyContent: 'flex-end', flex: 1 }}>
+                                <View style={{ flexDirection: 'row', alignSelf: 'flex-end' }}>
+                                    <Text style={{ fontFamily: 'IRANSans', marginRight: 5, marginTop: 12, color: '#505056' }}>حافظ</Text>
                                     <Avatar
                                         medium
                                         rounded
@@ -45,7 +46,7 @@ export default class ExploreCard extends Component {
                                     </Text>
                                 </View>
                             </Row>
-                            <Row style={{ flexDirection: 'row', flex: 1, alignSelf:'flex-end', backgroundColor:'black'}}>
+                            <Row style={{ flexDirection: 'row', flex: 1, alignSelf: 'flex-end', backgroundColor: 'black' }}>
                                 <View style={{ flexDirection: 'row', flex: 1 }}>
                                     <Icon
                                         name='favorite' size={24} color="#34343a" style={{ marginLeft: 5 }}
@@ -80,5 +81,22 @@ export default class ExploreCard extends Component {
                 {mappedData}
             </View>
         )
+    }
+}
+
+/* A simple router was implmented here for the search route */
+const firstRoute = {
+    name: 'Explore!',
+    component: RanjoorExplore,
+};
+
+// The Router wrapper
+class ExploreSearchWrapper extends React.Component {
+    render() {
+        return (
+            <Router
+                firstRoute={firstRoute}
+            />
+        );
     }
 }
