@@ -42,6 +42,10 @@ Ganjoor with some difficulties in React-Native.
 * Implement the search tab on the left buton at the top -> (Being Done)
 
 ## Todo: 7.18.2017
-* Improve navigation
+* Improve navigation -> (Done)
 * Writing a new API for the database(Thanks to pi0)
-* Improve header on all tabs
+* Improve header on all tabs -> (Done)
+
+## Todo: 7.19.2017
+* Add search box on the main page -> (Being Done)
+* Improve navigation between search box and main ui -> (Being Done)
