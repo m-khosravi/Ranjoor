@@ -83,20 +83,3 @@ export default class ExploreCard extends Component {
         )
     }
 }
-
-/* A simple router was implmented here for the search route */
-const firstRoute = {
-    name: 'Explore!',
-    component: RanjoorExplore,
-};
-
-// The Router wrapper
-class ExploreSearchWrapper extends React.Component {
-    render() {
-        return (
-            <Router
-                firstRoute={firstRoute}
-            />
-        );
-    }
-}
