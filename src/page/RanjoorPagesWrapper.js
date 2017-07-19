@@ -24,7 +24,7 @@ const TabWrapper = TabNavigator({
       showLabel: false,
       showIcon: true,
       indicatorStyle: {
-        backgroundColor: '#4ab367'
+        backgroundColor: 'black'
       },
       upperCaseLabel: false,
     }

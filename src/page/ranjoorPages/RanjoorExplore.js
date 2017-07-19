@@ -65,7 +65,7 @@ class RanjoorExplore extends Component {
 
 var styles = StyleSheet.create({
     ExploreContainer: {
-        backgroundColor: '#303036',
+        backgroundColor: '#8e8d93',
         height: '100%',
         width: '100%'
     },
