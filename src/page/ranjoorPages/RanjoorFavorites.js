@@ -15,11 +15,11 @@ class RanjoorFavorites extends React.Component {
             <Icon
                 name="star"
                 size={24}
-                color={focused ? 'black' : '#202026'}
+                color={focused ? 'black' : '#333238'}
             />
         ),
         title: 'Favorites',
-        headerStyle: { backgroundColor: '#202026' },
+        headerStyle: { backgroundColor: '#333238' },
         headerTitleStyle: {
             color: 'white'
         },
@@ -37,7 +37,7 @@ class RanjoorFavorites extends React.Component {
 
 var styles = StyleSheet.create({
     FavoritesContainer: {
-        backgroundColor: '#303036',
+        backgroundColor: '#8e8d93',
         height: '100%',
         width: '100%'
     }

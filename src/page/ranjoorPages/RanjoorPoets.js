@@ -65,7 +65,7 @@ class RanjoorPoets extends React.Component {
 
 var styles = StyleSheet.create({
     PoetsContainer: {
-        backgroundColor: '#303036',
+        backgroundColor: '#8e8d93',
         height: '100%',
         width: '100%'
     }

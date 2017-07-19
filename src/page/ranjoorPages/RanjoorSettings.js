@@ -16,7 +16,7 @@ class RanjoorSettings extends React.Component {
             <Icon
                 name="sliders"
                 size={24}
-                color={focused ? 'black' : '#202026'}
+                color={focused ? 'black' : '#333238'}
             />
         ),
         headerStyle: { backgroundColor: '#202026' },
@@ -36,7 +36,7 @@ class RanjoorSettings extends React.Component {
 
 var styles = StyleSheet.create({
     SettingsContainer: {
-        backgroundColor: '#303036',
+        backgroundColor: '#8e8d93',
         height: '100%',
         width: '100%'
     }

@@ -32,11 +32,14 @@ export default class PoetHeader extends Component {
                     backgroundColor="#f0f0f0"
                     barStyle="dark-content"
                 />
-                <View style={{backgroundColor:'#fafafa', height:60,}}>
+                <View style={{backgroundColor:'#fafafa', height:50,}}>
                     <Header
-                    centerComponent={<Image style={styles.logo}
-                                            source={require('../../img/logo/Ranjoor_white_wide.png')}
-                                   />} 
+                    centerComponent={
+                        <View style={{flexDirection:'row'}}>
+                         <Text style={{fontSize:10,alignSelf:'flex-end', fontFamily:'Mj_Moshfegh', color:'black', marginBottom:20}}>شاعران</Text>
+                         <Text style={{fontSize:35,alignSelf:'flex-start', fontFamily:'Mj_Moshfegh', color:'black', marginBottom:6}}>گنجور</Text>       
+                        </View>
+                        } 
                     />
                 </View>
                 <View>

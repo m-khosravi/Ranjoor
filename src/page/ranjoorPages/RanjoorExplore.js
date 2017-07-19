@@ -27,7 +27,7 @@ class RanjoorExplore extends Component {
             <Icon
                 name="bandcamp"
                 size={24}
-                color={focused ? 'black' : '#202026'}
+                color={focused ? 'black' : '#333238'}
             />
         ),
         headerStyle: { backgroundColor: '#202026' },

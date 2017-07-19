@@ -24,7 +24,7 @@ class RanjoorSearch extends React.Component {
             <Icon
                 name="search"
                 size={24}
-                color={focused ? 'black' : '#202026'}
+                color={focused ? 'black' : '#333238'}
             />
         ),
         headerStyle: { backgroundColor: '#202026' },
@@ -59,7 +59,7 @@ class RanjoorSearch extends React.Component {
 
 var styles = StyleSheet.create({
     SearchContainer: {
-        backgroundColor: '#303036',
+        backgroundColor: '#8e8d93',
         height: '100%',
         width: '100%',
     },
