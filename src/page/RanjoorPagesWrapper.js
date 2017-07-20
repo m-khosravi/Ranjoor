@@ -11,7 +11,7 @@ const TabWrapper = TabNavigator({
   Explore: { screen: RanjoorExplore },
   Poets: { screen: RanjoorPoets },
   Favorites: { screen: RanjoorFavorites },
-  Settings: { screen: RanjoorSettings }
+  Settings: { screen: RanjoorSettings },
 }, {
     tabBarPosition: 'bottom',
     swipeEnabled: true,
