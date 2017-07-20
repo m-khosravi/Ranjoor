@@ -5,6 +5,7 @@ import {
     View,
     Image
 } from 'react-native';
+import { StackNavigator } from 'react-navigation';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { SearchBar } from 'react-native-elements';
 
@@ -35,6 +36,7 @@ class RanjoorSearch extends React.Component {
         },
     };
     render() {
+        const { dispatch } = this.props.navigation;
         return (
             <View style={styles.SearchContainer}>
                 <SearchBar

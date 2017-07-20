@@ -7,8 +7,6 @@ import RanjoorFavorites from './ranjoorPages/RanjoorFavorites';
 import RanjoorSettings from './ranjoorPages/RanjoorSettings';
 import { NavigationComponenet } from 'react-native-material-bottom-navigation';
 
-const { dispatch } = this.props.navigation;
-
 const TabWrapper = TabNavigator({
   Explore: { screen: RanjoorExplore },
   Poets: { screen: RanjoorPoets },
