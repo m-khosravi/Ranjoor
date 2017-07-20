@@ -66,8 +66,4 @@ var styles = StyleSheet.create({
     },
 })
 
-const searchWrapper = StackNavigator({
-    Search: { screen: RanjoorSearch }
-})
-
 export default RanjoorSearch
