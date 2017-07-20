@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 import SplashScreen from './page/SplashScreen';
 import TabWrapper from './page/RanjoorPagesWrapper';
-
+import SearchWrapper from './page/RanjoorSearch'
 
 class Ranjoor extends Component {
   render() {
@@ -15,7 +15,8 @@ class Ranjoor extends Component {
 
 const GotoRanjoorMain = StackNavigator({
   Splash: { screen: SplashScreen },
-  TabWrapper: { screen: TabWrapper }
+  TabWrapper: { screen: TabWrapper },
+  SearchWrapper: { screen: SearchWrapper }
 })
 
 export default GotoRanjoorMain

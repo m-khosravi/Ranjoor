@@ -43,7 +43,7 @@ export default class ExploreHeader extends Component {
                                 onPress={() => dispatch({
                                     type: 'Navigation/Navigate',
                                     index: 0,
-                                    actions: [{ type: 'NAVIGATE', routeName: 'TabWrapper' }]
+                                    actions: [{ type: 'NAVIGATE', routeName: 'searchWrapper' }]
                                 })} />
                         }
                         centerComponent={
