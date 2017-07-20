@@ -35,12 +35,16 @@ export default class ExploreHeader extends Component {
                     <Header
                         rightComponent={
                             <Icon
-                                containerStyle={{marginBottom:'63%'}}
+                                containerStyle={{ marginBottom: '63%' }}
                                 size={25}
                                 name='heartbeat'
                                 type='font-awesome'
                                 color='black'
-                                onPress={() => console.log('hello')} />
+                                onPress={() => dispatch({
+                                    type: 'Navigation/Navigate',
+                                    index: 0,
+                                    actions: [{ type: 'NAVIGATE', routeName: 'TabWrapper' }]
+                                })} />
                         }
                         centerComponent={
                             <Text style={{ fontSize: 35, fontFamily: 'Mj_Moshfegh', color: 'black', marginBottom: 6 }}>گنجور</Text>
