@@ -23,7 +23,7 @@ const channelButton = (<Button
     iconRight={true}
 />)
 
-export default class ExploreHeader extends Component {
+export default class SearchHeader extends Component {
     render() {
         return (
             <View>
@@ -47,7 +47,10 @@ export default class ExploreHeader extends Component {
                                 })} />
                         }
                         centerComponent={
-                            <Text style={{ fontSize: 35, fontFamily: 'Mj_Moshfegh', color: 'black', marginBottom: 6 }}>گنجور</Text>
+                            <View style={{ flexDirection: 'row' }}>
+                                <Text style={{ fontSize: 10, alignSelf: 'flex-end', fontFamily: 'Mj_Moshfegh', color: 'black', marginBottom: 20 }}>برترین آثار</Text>
+                                <Text style={{ fontSize: 35, alignSelf: 'flex-start', fontFamily: 'Mj_Moshfegh', color: 'black', marginBottom: 6 }}>گنجور</Text>
+                            </View>
                         }
                     />
                 </View>

@@ -6,12 +6,13 @@ import RanjoorPoets from './ranjoorPages/RanjoorPoets';
 import RanjoorFavorites from './ranjoorPages/RanjoorFavorites';
 import RanjoorSettings from './ranjoorPages/RanjoorSettings';
 import { NavigationComponenet } from 'react-native-material-bottom-navigation';
+import RanjoorSearch from './RanjoorSearch'
 
 const TabWrapper = TabNavigator({
   Explore: { screen: RanjoorExplore },
   Poets: { screen: RanjoorPoets },
-  Favorites: { screen: RanjoorFavorites },
-  Settings: { screen: RanjoorSettings },
+  Search: { screen: RanjoorSearch },
+  Favorites: { screen: RanjoorFavorites }
 }, {
     tabBarPosition: 'bottom',
     swipeEnabled: true,

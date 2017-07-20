@@ -8,7 +8,7 @@ import {
 import { StackNavigator } from 'react-navigation';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { SearchBar } from 'react-native-elements';
-
+import SearchHeader from '../elements/headers/SearchHeader'
 
 /* 
 * This will be used to find out if the
@@ -39,6 +39,7 @@ class RanjoorSearch extends React.Component {
         const { dispatch } = this.props.navigation;
         return (
             <View style={styles.SearchContainer}>
+                <ExploreHeader />
                 <SearchBar
                     inputStyle={{fontFamily:'IRANSans', fontSize:11, backgroundColor:'black'}}
                     containerStyle={{backgroundColor:'#fafafa', borderRadius:25, width:'90%',
