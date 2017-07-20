@@ -49,3 +49,7 @@ Ganjoor with some difficulties in React-Native.
 ## Todo: 7.19.2017
 * Add search box on the main page -> (Being Done)
 * Improve navigation between search box and main ui -> (Being Done)
+
+## Todo: 7.20.2017
+* Treat search panel as a tab -> (Done)
+* Improve search panel UI -> (Done)
