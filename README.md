@@ -53,3 +53,10 @@ Ganjoor with some difficulties in React-Native.
 ## Todo: 7.20.2017
 * Treat search panel as a tab -> (Done)
 * Improve search panel UI -> (Done)
+
+## Todo: 7.21.2017
+* Fridays are not good for ranj!
+
+## Todo: 7.22.2017
+* Ranjoor API pre-requisites
+* UI Improvements 
