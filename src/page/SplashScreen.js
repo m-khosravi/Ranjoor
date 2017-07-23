@@ -27,7 +27,7 @@ export default class SplashScreen extends React.Component {
                         dispatch({
                             type: 'Navigation/RESET',
                             index: 0,
-                            actions: [{ type: 'NAVIGATE', routeName: 'TabWrapper' }]
+                            actions: [{ type: 'NAVIGATE', routeName: 'DrawerWrapper' }]
                         })
                     }}
                 >
