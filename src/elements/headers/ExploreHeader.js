@@ -47,7 +47,7 @@ export default class ExploreHeader extends Component {
                                 })} />
                         }
                         centerComponent={
-                            <Text style={{ fontSize: 35, fontFamily: 'Mj_Moshfegh', color: 'black', marginBottom: 6 }}>گنجور</Text>
+                            <Text style={{ fontSize: 35, fontFamily: 'Mj_Moshfegh', color: 'black', marginBottom: 8 }}>گنجور</Text>
                         }
                     />
                 </View>

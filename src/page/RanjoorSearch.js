@@ -8,7 +8,8 @@ import {
 import { StackNavigator } from 'react-navigation';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { SearchBar } from 'react-native-elements';
-import SearchHeader from '../elements/headers/SearchHeader'
+import ExploreHeader from '../elements/headers/ExploreHeader'
+
 
 /* 
 * This will be used to find out if the
