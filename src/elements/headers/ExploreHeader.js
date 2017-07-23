@@ -40,11 +40,9 @@ export default class ExploreHeader extends Component {
                                 name='heartbeat'
                                 type='font-awesome'
                                 color='black'
-                                onPress={() => dispatch({
-                                    type: 'Navigation/Navigate',
-                                    index: 0,
-                                    actions: [{ type: 'NAVIGATE', routeName: this.props.navIWasLookingFor }]
-                                })} />
+                                onPress={() => {this.props.navigation.navigate('DrawerOpen')}}
+                                 // open drawer} 
+                                 />
                         }
                         centerComponent={
                             <Text style={{ fontSize: 35, fontFamily: 'Mj_Moshfegh', color: 'black', marginBottom: 8 }}>گنجور</Text>
