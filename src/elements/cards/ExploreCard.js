@@ -18,7 +18,7 @@ export default class ExploreCard extends Component {
                     <View style={{ flex: 1 }}></View>
                     <Card
                         containerStyle={{
-                            height: 250, backgroundColor: '#fafafa', shadowOpacity: 0.7,
+                            height: 180, backgroundColor: '#fafafa', shadowOpacity: 0.7,
                             shadowOffset: { height: 5 }, shadowColor: 'black', borderWidth: 0, borderRadius: 5, flexDirection: 'row'
                         }}
                         wrapperStyle={{ width: '100%', flexDirection: 'column' }}
@@ -46,7 +46,7 @@ export default class ExploreCard extends Component {
                                     </Text>
                                 </View>
                             </Row>
-                            <Row style={{ flexDirection: 'row', flex: 1, alignSelf: 'flex-end', backgroundColor: 'black' }}>
+                            <Row style={{ flexDirection: 'row', flex: 1, alignSelf: 'flex-end'}}>
                                 <View style={{ flexDirection: 'row', flex: 1 }}>
                                     <Icon
                                         name='favorite' size={24} color="#34343a" style={{ marginLeft: 5 }}
