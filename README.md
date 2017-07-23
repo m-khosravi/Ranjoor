@@ -64,3 +64,7 @@ Ganjoor with some difficulties in React-Native.
 ## Todo: 7.23.2017
 * TDD #1
 * Add drawer as the 2nd layer wrapper
+
+## Todo: 7.24.2017
+* Display the drawer
+* Drawer UI improvements
