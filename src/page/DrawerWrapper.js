@@ -11,7 +11,7 @@ const DrawerWrapper = new DrawerNavigator({
     }
 });
 
-TabWrapper.navigationOptions = {
+DrawerWrapper.navigationOptions = {
     header: null
 }
 

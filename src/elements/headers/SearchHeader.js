@@ -58,8 +58,6 @@ export default class SearchHeader extends Component {
                     <Divider style={{ backgroundColor: 'white' }} />
                 </View>
             </View>
-
-
         )
     }
 }
