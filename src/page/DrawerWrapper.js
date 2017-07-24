@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { StyleSheet } from 'react-native';
-import { TabNavigator } from 'react-navigation';
+import { TabNavigator, DrawerNavigator } from 'react-navigation';
 import TabWrapper from './RanjoorPagesWrapper';
+
 
 const DrawerWrapper = new DrawerNavigator({
     /* Here is our tab navigator inside the drawer navigator */
@@ -9,5 +10,9 @@ const DrawerWrapper = new DrawerNavigator({
         screen: TabWrapper
     }
 });
+
+TabWrapper.navigationOptions = {
+    header: null
+}
 
 export default DrawerWrapper
