@@ -28,8 +28,8 @@ export default class ExploreHeader extends Component {
         return (
             <View>
                 <StatusBar
-                    backgroundColor="#f0f0f0"
-                    barStyle="dark-content"
+                    backgroundColor="#705697"
+                    barStyle="light-content"
                 />
                 <View style={{ flexDirection: 'column', backgroundColor: '#fafafa', height: 50 }}>
                     <Header

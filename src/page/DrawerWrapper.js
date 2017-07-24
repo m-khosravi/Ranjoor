@@ -20,6 +20,6 @@ const DrawerWrapper = new DrawerNavigator({
 
 /* Navigation Options are implemented here */
 DrawerWrapper.navigationOptions = {
-    header: null,   
+    header: null, 
 }
 export default DrawerWrapper
