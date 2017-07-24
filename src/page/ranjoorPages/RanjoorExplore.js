@@ -5,7 +5,8 @@ import {
     View,
     Image,
     ScrollView,
-    Alert
+    Alert,
+    StatusBar
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import ExploreCard from '../../elements/cards/ExploreCard';
@@ -55,6 +56,10 @@ class RanjoorExplore extends Component {
     render() {
         return (
             <View style={styles.ExploreContainer}>
+                <StatusBar
+                    backgroundColor="#705697"
+                    barStyle="light-content"
+                />
                 <ExploreHeader />
                 <ScrollView>
                     <ExploreCard data={this.state.rawData} />

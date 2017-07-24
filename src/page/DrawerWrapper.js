@@ -11,9 +11,8 @@ const DrawerWrapper = new DrawerNavigator({
     }
 },{
     contentOptions: {
-        activeBackgroundColor:'black',
-        style: {
-            backgroundColor:'red'
+        labelStyle : {
+            fontFamily:'IRANSans'
         }
     }
 });
