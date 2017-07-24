@@ -28,9 +28,8 @@ export default class ExploreHeader extends Component {
         return (
             <View>
                 <StatusBar
-                    translucent
-                    backgroundColor="rgba(0, 0, 0, 0.24)"
-                    animated
+                    backgroundColor="#f0f0f0"
+                    barStyle="dark-content"
                 />
                 <View style={{ flexDirection: 'column', backgroundColor: '#fafafa', height: 50 }}>
                     <Header
@@ -41,9 +40,9 @@ export default class ExploreHeader extends Component {
                                 name='heartbeat'
                                 type='font-awesome'
                                 color='black'
-                                onPress={() => { this.props.navigation.navigate('DrawerOpen') }}
-                            // open drawer} 
-                            />
+                                onPress={() => {this.props.navigation.navigate('DrawerOpen')}}
+                                 // open drawer} 
+                                 />
                         }
                         centerComponent={
                             <Text style={{ fontSize: 35, fontFamily: 'Mj_Moshfegh', color: 'black', marginBottom: 8 }}>گنجور</Text>
