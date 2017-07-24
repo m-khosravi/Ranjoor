@@ -4,8 +4,7 @@ import { TabNavigator, DrawerNavigator } from 'react-navigation';
 import TabWrapper from './RanjoorPagesWrapper';
 import MorphDrawer from '../elements/drawerMaterial/CustomizedDrawer';
 
-
-const DrawerWrapper = new DrawerNavigator({
+const DrawerWrapper = new MorphDrawer({
     /* Here is our tab navigator inside the drawer navigator */
     TabWrapper: {
         screen: TabWrapper
