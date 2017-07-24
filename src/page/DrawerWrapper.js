@@ -11,8 +11,14 @@ const DrawerWrapper = new DrawerNavigator({
     }
 });
 
+/* Navigation Options are implemented here */
 DrawerWrapper.navigationOptions = {
-    header: null
+    header: null,
+}
+
+/* Content options are implemented here */
+DrawerWrapper.contentOptions = {
+    style: {backgroundColor:'black'}
 }
 
 export default DrawerWrapper
