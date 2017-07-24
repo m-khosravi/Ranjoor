@@ -9,11 +9,17 @@ const DrawerWrapper = new DrawerNavigator({
     TabWrapper: {
         screen: TabWrapper
     }
+},{
+    contentOptions: {
+        activeBackgroundColor:'black',
+        style: {
+            backgroundColor:'red'
+        }
+    }
 });
 
 /* Navigation Options are implemented here */
 DrawerWrapper.navigationOptions = {
-    header: null,
+    header: null,   
 }
-
 export default DrawerWrapper

@@ -29,7 +29,7 @@ export default class ExploreHeader extends Component {
             <View>
                 <StatusBar
                     translucent
-                    backgroundColor="rgba(0, 0, 0, 0.20)"
+                    backgroundColor="rgba(0, 0, 0, 0.24)"
                     animated
                 />
                 <View style={{ flexDirection: 'column', backgroundColor: '#fafafa', height: 50 }}>
