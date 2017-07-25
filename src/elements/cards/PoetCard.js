@@ -22,13 +22,13 @@ export default class PoetCard extends Component {
           <View style={{ flex: 1 }}></View>
           <Card
             containerStyle={{
-              backgroundColor: '#fafafa', shadowOpacity: 0.7,
+              backgroundColor: 'black', shadowOpacity: 0.7,
               shadowOffset: { height: 5 }, shadowColor: 'black', borderWidth: 0, borderRadius: 5, flexDirection: 'row'
             }}
             wrapperStyle={{ width: '100%', flexDirection: 'column' }}
           >
             <View>
-              <Text style={{ alignSelf: 'flex-end', fontFamily: 'IRANSans', color: 'black' }}>
+              <Text style={{ fontSize:20, alignSelf: 'flex-start', fontFamily: 'IRANSans', color: '#705697' }}>
                 {data1}
               </Text>
             </View>
