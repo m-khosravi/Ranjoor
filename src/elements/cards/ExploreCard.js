@@ -11,6 +11,29 @@ import { Card, ListItem, Button, Icon, Avatar, Grid, Row, Col } from 'react-nati
 import Router from 'react-native-simple-router';
 
 export default class ExploreCard extends Component {
+    constructor() {
+        super();
+        this.state = {
+            rawData: []
+        }
+    }
+
+    fetchGanjoorData() {
+        return fetch('http://c.ganjoor.net/beyt-json.php?a=1')
+            .then((response) => response.json())
+            .then((responseJson) => {
+                console.log(responseJson)
+                this.setState({ rawData: responseJson })
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+    }
+
+    componentDidMount() {
+        this.fetchGanjoorData();
+    }
+
     render() {
         /* Mapped data will be processed right here */
         return (
@@ -26,7 +49,7 @@ export default class ExploreCard extends Component {
                     <Grid>
                         <Row style={{ flexDirection: 'row', justifyContent: 'flex-end', flex: 1 }}>
                             <View style={{ flexDirection: 'row', alignSelf: 'flex-end' }}>
-                                <Text style={{ fontFamily: 'IRANSans', marginRight: 5, marginTop: 12, color: '#505056' }}>{this.props.data.poet}</Text>
+                                <Text style={{ fontFamily: 'IRANSans', marginRight: 5, marginTop: 12, color: '#505056' }}>{this.state.rawData.poet}</Text>
                                 <Avatar
                                     medium
                                     rounded
@@ -40,15 +63,15 @@ export default class ExploreCard extends Component {
                             </View>
                         </Row>
                         <Row style={{ flexDirection: 'row', alignSelf: 'flex-end', flex: 1 }}>
-                            <View style={{ flex: 1, margin:10}}>
-                                <View style={{alignSelf: 'flex-end', flex: 1 }}>
-                                    <Text style={{ alignSelf: 'flex-end', fontFamily: 'IRANSans', fontType: 'bold', color: 'black'}}>
-                                        {this.props.data.m1}
+                            <View style={{ flex: 1, margin: 10 }}>
+                                <View style={{ alignSelf: 'flex-end', flex: 1 }}>
+                                    <Text style={{ alignSelf: 'flex-end', fontFamily: 'IRANSans', fontType: 'bold', color: 'black' }}>
+                                        {this.state.rawData.m1}
                                     </Text>
                                 </View>
                                 <View style={{ alignSelf: 'flex-start', flex: 1 }}>
-                                    <Text style={{ alignSelf: 'flex-start', fontFamily: 'IRANSans', fontType: 'bold', color: 'black', marginTop:10 }}>
-                                        {this.props.data.m2}
+                                    <Text style={{ alignSelf: 'flex-start', fontFamily: 'IRANSans', fontType: 'bold', color: 'black', marginTop: 10 }}>
+                                        {this.state.rawData.m2}
                                     </Text>
                                 </View>
                             </View>

@@ -58,6 +58,7 @@ class RanjoorPoets extends React.Component {
                 <ScrollView>
                     <PoetCard data={this.state.rawData} />
                 </ScrollView>
+                    <PoetCard data={this.state.rawData} />
             </View>
         );
     }

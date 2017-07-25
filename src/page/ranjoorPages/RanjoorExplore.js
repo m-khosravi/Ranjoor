@@ -15,17 +15,10 @@ import { SearchBar } from 'react-native-elements';
 
 class RanjoorExplore extends Component {
 
-    constructor() {
-        super();
-        this.state = {
-            rawData: []
-        }
-    }
-
     static navigationOptions = {
         header: null,
         title: 'گشت و گذار',
-        titleStyle:{
+        titleStyle: {
             fontFamily: 'IRANSans'
         },
         tabBarIcon: ({ tintColor, focused }) => (
@@ -41,28 +34,22 @@ class RanjoorExplore extends Component {
         }
     };
 
-    fetchGanjoorData() {
-        return fetch('http://c.ganjoor.net/beyt-json.php?a=1')
-            .then((response) => response.json())
-            .then((responseJson) => {
-                console.log(responseJson)
-                this.setState({ rawData: responseJson })
-            })
-            .catch((error) => {
-                console.error(error);
-            });
-    }
-
-    componentDidMount() {
-        this.fetchGanjoorData();
-    }
-
     render() {
         return (
             <View style={styles.ExploreContainer}>
+                <StatusBar
+                    backgroundColor="#705697"
+                    barStyle="light-content"
+                />
                 <ExploreHeader />
                 <ScrollView>
-                    <ExploreCard data={this.state.rawData} />
+                    <ExploreCard />
+                    <ExploreCard />
+                    <ExploreCard />
+                    <ExploreCard />
+                    <ExploreCard />
+                    <ExploreCard />
+                    <ExploreCard />
                 </ScrollView>
             </View>
         );
