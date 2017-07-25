@@ -24,7 +24,10 @@ class RanjoorExplore extends Component {
 
     static navigationOptions = {
         header: null,
-        title: 'Explore',
+        title: 'گشت و گذار',
+        titleStyle:{
+            fontFamily: 'IRANSans'
+        },
         tabBarIcon: ({ tintColor, focused }) => (
             <Icon
                 name="bandcamp"

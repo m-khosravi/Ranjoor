@@ -18,6 +18,10 @@ export default class SplashScreen extends React.Component {
         const { dispatch } = this.props.navigation;
         return (
             <View style={styles.container}>
+                <StatusBar
+                    backgroundColor="#705697"
+                    barStyle="light-content"
+                />
                 <View style={{ flex: 1 }}></View>
                 <Animatable.View
                     animation="fadeIn"
