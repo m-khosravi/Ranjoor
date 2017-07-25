@@ -47,8 +47,8 @@ export default class ExploreCard extends Component {
                                     </Text>
                                 </View>
                             </Row>
-                            <Row style={{ flexDirection: 'row', flex: 1, alignSelf: 'flex-end' }}>
-                                <View style={{ flexDirection: 'row', flex: 1 }}>
+                            <Row style={{flexDirection: 'row', flex: 1, alignSelf: 'flex-end' }}>
+                                <View style={{ flexDirection: 'row', alignSelf:'flex-end', flex: 1 }}>
                                     <Icon
                                         name='favorite' size={24} color="#34343a" style={{ marginLeft: 5 }}
                                     />
@@ -57,7 +57,7 @@ export default class ExploreCard extends Component {
                                     />
                                 </View>
                                 <View style={{ flex: 1 }}></View>
-                                <View style={{ flex: 1 }}>
+                                <View style={{ flex: 1, alignSelf:'flex-end' }}>
                                     <Button
                                         textStyle={{ fontSize: 15 }}
                                         iconRight
