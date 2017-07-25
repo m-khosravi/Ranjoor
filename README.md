@@ -68,3 +68,7 @@ Ganjoor with some difficulties in React-Native.
 ## Todo: 7.24.2017
 * Display the drawer
 * Drawer UI improvements
+
+## Todo: 7.25.2017
+* Complete ExploreCards
+* Decide whether to use drawer or not
