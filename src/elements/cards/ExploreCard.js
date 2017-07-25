@@ -13,7 +13,6 @@ import Router from 'react-native-simple-router';
 export default class ExploreCard extends Component {
     render() {
         /* Mapped data will be processed right here */
-        let mappedData = this.props.data.map(function (data1, index) {
             return (
                 <View style={{ flexDirection: 'row' }}>
                     <View style={{ flex: 1 }}></View>
@@ -27,7 +26,7 @@ export default class ExploreCard extends Component {
                         <Grid>
                             <Row style={{ flexDirection: 'row', justifyContent: 'flex-end', flex: 1 }}>
                                 <View style={{ flexDirection: 'row', alignSelf: 'flex-end' }}>
-                                    <Text style={{ fontFamily: 'IRANSans', marginRight: 5, marginTop: 12, color: '#505056' }}>حافظ</Text>
+                                    <Text style={{ fontFamily: 'IRANSans', marginRight: 5, marginTop: 12, color: '#505056' }}>{this.props.data.poet}</Text>
                                     <Avatar
                                         medium
                                         rounded
@@ -43,7 +42,10 @@ export default class ExploreCard extends Component {
                             <Row style={{ flexDirection: 'row', alignSelf: 'flex-end', flex: 1 }}>
                                 <View>
                                     <Text style={{ alignSelf: 'flex-end', fontFamily: 'IRANSans', color: 'black' }}>
-                                        {data1.name}
+                                        {this.props.data.m1}
+                                    </Text>
+                                    <Text style={{ alignSelf: 'flex-end', fontFamily: 'IRANSans', color: 'black' }}>
+                                        {this.props.data.m2}
                                     </Text>
                                 </View>
                             </Row>
@@ -76,7 +78,6 @@ export default class ExploreCard extends Component {
                     <View style={{ flex: 1 }}></View>
                 </View>
             )
-        })
         return (
             <View>
                 {mappedData}
