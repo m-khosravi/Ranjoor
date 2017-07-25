@@ -37,7 +37,7 @@ class RanjoorPoets extends React.Component {
     };
 
     fetchGanjoorData() {
-        return fetch('http://172.25.136.231:4003/v1/poets')
+        return fetch('http://poetrydb.org/author')
             .then((response) => response.json())
             .then((responseJson) => {
                 this.setState({ rawData: responseJson })
@@ -58,7 +58,6 @@ class RanjoorPoets extends React.Component {
                 <ScrollView>
                     <PoetCard data={this.state.rawData} />
                 </ScrollView>
-                    <PoetCard data={this.state.rawData} />
             </View>
         );
     }
