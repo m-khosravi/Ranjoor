@@ -29,9 +29,11 @@ export default class ExploreHeader extends Component {
             <View>
                 <View style={{ flexDirection: 'column', backgroundColor: '#fafafa', height: 50 }}>
                     <Header
+                        statusBarProps={{ backgroundColor: '#705697', barStyle: 'light-content' }}
+                        outerContainerStyles={{ shadowColor:'black', shadowRadius:5, shadowOpacity:5}}
                         rightComponent={
                             <Icon
-                                containerStyle={{ marginBottom: '63%' }}
+                                containerStyle={{ marginBottom: '63%', marginRight:1 }}
                                 size={25}
                                 name='heartbeat'
                                 type='font-awesome'

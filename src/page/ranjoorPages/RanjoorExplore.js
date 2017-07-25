@@ -36,13 +36,22 @@ class RanjoorExplore extends Component {
 
     render() {
         return (
+            
             <View style={styles.ExploreContainer}>
                 <StatusBar
                     backgroundColor="#705697"
                     barStyle="light-content"
                 />
                 <ExploreHeader />
+                <StatusBar
+                    backgroundColor="#705697"
+                    barStyle="light-content"
+                />
                 <ScrollView>
+                <StatusBar
+                    backgroundColor="#705697"
+                    barStyle="light-content"
+                />
                     <ExploreCard />
                     <ExploreCard />
                     <ExploreCard />
