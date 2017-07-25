@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import { StyleSheet } from 'react-native';
 import { TabNavigator, DrawerNavigator } from 'react-navigation';
 import TabWrapper from './RanjoorPagesWrapper';
-import RanjoorExplore from './ranjoorPages/RanjoorExplore';
+import RanjoorSearch from './RanjoorSearch';
+
 
 const DrawerWrapper = new DrawerNavigator({
     /* Here is our tab navigator inside the drawer navigator */
-    TabWrapper: {
+    Home: {
         screen: TabWrapper,
-    }
+    },
 },{
     contentOptions: {
     }

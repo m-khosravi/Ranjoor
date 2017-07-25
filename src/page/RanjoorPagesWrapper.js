@@ -21,7 +21,7 @@ const TabWrapper = TabNavigator({
       style: {
         backgroundColor: '#fafafa',
       },
-      pressColor: '#303036',
+      pressColor: '#705697',
       showLabel: false,
       showIcon: true,
       indicatorStyle: {
