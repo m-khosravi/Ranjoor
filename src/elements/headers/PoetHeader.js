@@ -25,6 +25,7 @@ const channelButton = (<Button
 />)
 
 export default class PoetHeader extends Component {
+    
     render(){
         return(
             <View>
