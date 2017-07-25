@@ -61,7 +61,7 @@ export default class ExploreCard extends Component {
                                     <Button
                                         textStyle={{ fontSize: 15 }}
                                         iconRight
-                                        backgroundColor='#4ab367'
+                                        backgroundColor='#705697'
                                         fontFamily='IRANSans_UltraLight'
                                         buttonStyle={{
                                             height: 15, width: 100,
