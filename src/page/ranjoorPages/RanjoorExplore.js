@@ -36,7 +36,7 @@ class RanjoorExplore extends Component {
 
     render() {
         return (
-            
+
             <View style={styles.ExploreContainer}>
                 <StatusBar
                     backgroundColor="#705697"
@@ -47,11 +47,15 @@ class RanjoorExplore extends Component {
                     backgroundColor="#705697"
                     barStyle="light-content"
                 />
-                <ScrollView>
-                <StatusBar
-                    backgroundColor="#705697"
-                    barStyle="light-content"
-                />
+                <View>
+                    <Image style={{ height: width, width: width, position: 'absolute', top: 0, left: 0 }} 
+                    source={require('../../img/walls/Background.png')} />
+                </View>
+                <ScrollView >
+                    <StatusBar
+                        backgroundColor="#705697"
+                        barStyle="light-content"
+                    />
                     <ExploreCard />
                     <ExploreCard />
                     <ExploreCard />
