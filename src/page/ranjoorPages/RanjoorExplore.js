@@ -42,9 +42,10 @@ class RanjoorExplore extends Component {
     };
 
     fetchGanjoorData() {
-        return fetch('https://jsonplaceholder.typicode.com/posts/')
+        return fetch('http://c.ganjoor.net/beyt-json.php?a=1')
             .then((response) => response.json())
             .then((responseJson) => {
+                console.log(responseJson)
                 this.setState({ rawData: responseJson })
             })
             .catch((error) => {
@@ -59,10 +60,6 @@ class RanjoorExplore extends Component {
     render() {
         return (
             <View style={styles.ExploreContainer}>
-                <StatusBar
-                    backgroundColor="#705697"
-                    barStyle="light-content"
-                />
                 <ExploreHeader />
                 <ScrollView>
                     <ExploreCard data={this.state.rawData} />
