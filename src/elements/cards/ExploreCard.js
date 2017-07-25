@@ -4,7 +4,8 @@ import {
     Text,
     View,
     Image,
-    Alert
+    Alert,
+    StatusBar
 } from 'react-native';
 import { Card, ListItem, Button, Icon, Avatar, Grid, Row, Col } from 'react-native-elements';
 import Router from 'react-native-simple-router';
@@ -46,7 +47,7 @@ export default class ExploreCard extends Component {
                                     </Text>
                                 </View>
                             </Row>
-                            <Row style={{ flexDirection: 'row', flex: 1, alignSelf: 'flex-end'}}>
+                            <Row style={{ flexDirection: 'row', flex: 1, alignSelf: 'flex-end' }}>
                                 <View style={{ flexDirection: 'row', flex: 1 }}>
                                     <Icon
                                         name='favorite' size={24} color="#34343a" style={{ marginLeft: 5 }}
