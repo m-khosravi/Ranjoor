@@ -4,6 +4,7 @@ import {
     Text,
     View,
     Image,
+    StatusBar
 } from 'react-native';
 import { Header, Divider, Button, Icon } from 'react-native-elements';
 
