@@ -135,7 +135,7 @@ export default class ExploreCard extends Component {
             return (
                 <View style={{ flexDirection: 'column' }}>
                     <View style={{ flex: 1 }}></View>
-                    <View style={{ justifyContent: 'center', alignContent: 'center' }}>
+                    <View style={{ marginTop:90, justifyContent: 'center', alignContent: 'center' }}>
                         <Progress.Circle
                             color='#705697'
                             style={styles.progress}
