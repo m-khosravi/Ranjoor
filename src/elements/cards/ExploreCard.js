@@ -136,7 +136,8 @@ export default class ExploreCard extends Component {
                 <View style={{ flexDirection: 'column' }}>
                     <View style={{ flex: 1 }}></View>
                     <View style={{ justifyContent: 'center', alignContent: 'center' }}>
-                        <Progress.CircleSnail
+                        <Progress.Circle
+                            color='#705697'
                             style={styles.progress}
                             progress={this.state.progress}
                             indeterminate={this.state.indeterminate}
@@ -144,35 +145,35 @@ export default class ExploreCard extends Component {
                         <View style={{ flex: 1 }}></View>
                     </View>
                 </View>
-                    )
+            )
         }
         return (
             <View>
-                        {mappedData}
-                    </View>
-                    )
+                {mappedData}
+            </View>
+        )
     }
 }
 
 const styles = StyleSheet.create({
-                        container: {
-                        flex: 2,
+    container: {
+        flex: 2,
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: 'black',
         paddingVertical: 20,
     },
     welcome: {
-                        fontSize: 20,
+        fontSize: 20,
         textAlign: 'center',
         margin: 10,
     },
     circles: {
-                        flexDirection: 'row',
+        flexDirection: 'row',
         alignItems: 'center',
     },
     progress: {
-                        alignSelf:'center',
+        alignSelf: 'center',
         margin: 10,
     },
 });
