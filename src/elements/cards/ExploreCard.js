@@ -9,16 +9,21 @@ import {
 } from 'react-native';
 import { Card, ListItem, Button, Icon, Avatar, Grid, Row, Col } from 'react-native-elements';
 import Router from 'react-native-simple-router';
+import * as Progress from 'react-native-progress';
 
 export default class ExploreCard extends Component {
     constructor() {
         super();
         this.state = {
-            rawData: []
+            rawData: [],
+            progress: 0,
+            indeterminate: true,
         }
     }
 
     fetchGanjoorData() {
+        /* Start the animation */
+        this.animate();
         return fetch('http://c.ganjoor.net/beyt-json.php?a=1')
             .then((response) => response.json())
             .then((responseJson) => {
@@ -31,12 +36,12 @@ export default class ExploreCard extends Component {
     }
 
     componentDidMount() {
-        this.animate();
-        this.fetchGanjoorData();
+        /* Start fetching the data when component mounts */
+        fetchGanjoorData();
     }
 
-
     animate() {
+        /* Animate the object */
         let progress = 0;
         this.setState({ progress });
         setTimeout(() => {
@@ -57,11 +62,6 @@ export default class ExploreCard extends Component {
         return (
             <View style={{ flexDirection: 'row' }}>
                 <View style={{ flex: 1 }}></View>
-                <Progress.Pie
-                    style={styles.progress}
-                    progress={this.state.progress}
-                    indeterminate={this.state.indeterminate}
-                />
                 <Card
                     containerStyle={{
                         height: 180, backgroundColor: '#fafafa', shadowOpacity: 0.7,

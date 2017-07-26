@@ -12,7 +12,6 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import ExploreCard from '../../elements/cards/ExploreCard';
 import ExploreHeader from '../../elements/headers/ExploreHeader';
 import { SearchBar } from 'react-native-elements';
-import * as Progress from 'react-native-progress';
 
 class RanjoorExplore extends Component {
 
