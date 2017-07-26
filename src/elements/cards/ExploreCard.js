@@ -31,8 +31,26 @@ export default class ExploreCard extends Component {
     }
 
     componentDidMount() {
+        this.animate();
         this.fetchGanjoorData();
     }
+
+
+    animate() {
+        let progress = 0;
+        this.setState({ progress });
+        setTimeout(() => {
+            this.setState({ indeterminate: false });
+            setInterval(() => {
+                progress += Math.random() / 5;
+                if (progress > 1) {
+                    progress = 1;
+                }
+                this.setState({ progress });
+            }, 500);
+        }, 1500);
+    }
+
 
     render() {
         /* Mapped data will be processed right here */
