@@ -39,6 +39,11 @@ export default class ExploreCard extends Component {
         return (
             <View style={{ flexDirection: 'row' }}>
                 <View style={{ flex: 1 }}></View>
+                <Progress.Pie
+                    style={styles.progress}
+                    progress={this.state.progress}
+                    indeterminate={this.state.indeterminate}
+                />
                 <Card
                     containerStyle={{
                         height: 180, backgroundColor: '#fafafa', shadowOpacity: 0.7,
@@ -108,11 +113,6 @@ export default class ExploreCard extends Component {
         )
         return (
             <View>
-                <Progress.Pie
-                    style={styles.progress}
-                    progress={this.state.progress}
-                    indeterminate={this.state.indeterminate}
-                />
                 {mappedData}
             </View>
         )
@@ -120,23 +120,23 @@ export default class ExploreCard extends Component {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#fff',
-    paddingVertical: 20,
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  circles: {
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-  progress: {
-    margin: 10,
-  },
+    container: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#fff',
+        paddingVertical: 20,
+    },
+    welcome: {
+        fontSize: 20,
+        textAlign: 'center',
+        margin: 10,
+    },
+    circles: {
+        flexDirection: 'row',
+        alignItems: 'center',
+    },
+    progress: {
+        margin: 10,
+    },
 });
