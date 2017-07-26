@@ -46,12 +46,6 @@ class RanjoorExplore extends Component {
                     />
                         <View>
                             <ExploreCard />
-                            <ExploreCard />
-                            <ExploreCard />
-                            <ExploreCard />
-                            <ExploreCard />
-                            <ExploreCard />
-                            <ExploreCard />
                         </View>
                 </ScrollView>
             </View>

@@ -36,8 +36,7 @@ export default class ExploreCard extends Component {
     }
 
     componentDidMount() {
-        /* Start fetching the data when component mounts */
-        fetchGanjoorData();
+        this.fetchGanjoorData()
     }
 
     animate() {
