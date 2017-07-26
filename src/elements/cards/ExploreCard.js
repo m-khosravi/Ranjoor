@@ -59,7 +59,7 @@ export default class ExploreCard extends Component {
     render() {
         /* Mapped data will be processed right here */
         /* Check if the progress is completed */
-        if (this.state.progress == 100) {
+        if (this.state.progress == 1) {
             return (
                 <View style={{ flexDirection: 'row' }}>
                     <View style={{ flex: 1 }}></View>
@@ -133,41 +133,46 @@ export default class ExploreCard extends Component {
         }
         else {
             return (
-                <Progress.Bar
-                    style={styles.progress}
-                    progress={this.state.progress}
-                    indeterminate={this.state.indeterminate}
-                />
-            )
-
+                <View style={{ flexDirection: 'column' }}>
+                    <View style={{ flex: 1 }}></View>
+                    <View style={{ justifyContent: 'center', alignContent: 'center' }}>
+                        <Progress.CircleSnail
+                            style={styles.progress}
+                            progress={this.state.progress}
+                            indeterminate={this.state.indeterminate}
+                        />
+                        <View style={{ flex: 1 }}></View>
+                    </View>
+                </View>
+                    )
         }
-
         return (
             <View>
-                {mappedData}
-            </View>
-        )
+                        {mappedData}
+                    </View>
+                    )
     }
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
+                        container: {
+                        flex: 2,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#fff',
+        backgroundColor: 'black',
         paddingVertical: 20,
     },
     welcome: {
-        fontSize: 20,
+                        fontSize: 20,
         textAlign: 'center',
         margin: 10,
     },
     circles: {
-        flexDirection: 'row',
+                        flexDirection: 'row',
         alignItems: 'center',
     },
     progress: {
+                        alignSelf:'center',
         margin: 10,
     },
 });

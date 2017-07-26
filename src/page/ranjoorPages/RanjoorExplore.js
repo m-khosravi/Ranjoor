@@ -36,7 +36,6 @@ class RanjoorExplore extends Component {
 
     render() {
         return (
-
             <View style={styles.ExploreContainer}>
                 <ExploreHeader />
                 <ScrollView >
@@ -44,9 +43,9 @@ class RanjoorExplore extends Component {
                         backgroundColor="#705697"
                         barStyle="light-content"
                     />
-                        <View>
-                            <ExploreCard />
-                        </View>
+                    <View>
+                        <ExploreCard />
+                    </View>
                 </ScrollView>
             </View>
         );
