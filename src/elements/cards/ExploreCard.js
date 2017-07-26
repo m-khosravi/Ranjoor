@@ -90,12 +90,12 @@ export default class ExploreCard extends Component {
                             <Row style={{ flexDirection: 'row', alignSelf: 'flex-end', flex: 1 }}>
                                 <View style={{ flex: 1, margin: 10 }}>
                                     <View style={{ alignSelf: 'flex-end', flex: 1 }}>
-                                        <Text style={{ alignSelf: 'flex-end', fontFamily: 'IRANSans', fontWeight: 'bold', color: 'black' }}>
+                                        <Text style={{ fontSize: 14,alignSelf: 'flex-end', fontFamily: 'IRANSans_Bold', color: 'black' }}>
                                             {this.state.rawData.m1}
                                         </Text>
                                     </View>
                                     <View style={{ alignSelf: 'flex-start', flex: 1 }}>
-                                        <Text style={{ alignSelf: 'flex-start', fontFamily: 'IRANSans', fontWeight:"bold", color: 'black', marginTop: 10 }}>
+                                        <Text style={{ fontSize: 14,alignSelf: 'flex-start', fontFamily: 'IRANSans_Bold', color: 'black', marginTop: 10 }}>
                                             {this.state.rawData.m2}
                                         </Text>
                                     </View>
