@@ -55,6 +55,7 @@ export default class ExploreCard extends Component {
                                     rounded
                                     source={require('../../img/avatars/ferdowsi.jpg')}
                                     containerStyle={{
+                                        backgroundColor:'#705697',
                                         alignSelf: 'flex-start',
                                         shadowOpacity: 0.7,
                                         shadowOffset: { height: 5 }, shadowColor: 'black'
