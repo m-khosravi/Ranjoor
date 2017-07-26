@@ -55,7 +55,7 @@ export default class ExploreCard extends Component {
                                     rounded
                                     source={require('../../img/avatars/ferdowsi.jpg')}
                                     containerStyle={{
-                                        backgroundColor:'#705697',
+                                        backgroundColor: '#705697',
                                         alignSelf: 'flex-start',
                                         shadowOpacity: 0.7,
                                         shadowOffset: { height: 5 }, shadowColor: 'black'
@@ -108,8 +108,14 @@ export default class ExploreCard extends Component {
         )
         return (
             <View>
+                <Progress.Pie
+                    style={styles.progress}
+                    progress={this.state.progress}
+                    indeterminate={this.state.indeterminate}
+                />
                 {mappedData}
             </View>
         )
     }
 }
+
