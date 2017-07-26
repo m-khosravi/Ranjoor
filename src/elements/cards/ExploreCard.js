@@ -60,7 +60,7 @@ export default class ExploreCard extends Component {
     render() {
         /* Mapped data will be processed right here */
         /* Check if the progress is completed */
-        if (progress == 100) {
+        if (this.state.progress == 100) {
             return (
                 <View style={{ flexDirection: 'row' }}>
                     <View style={{ flex: 1 }}></View>
@@ -133,11 +133,14 @@ export default class ExploreCard extends Component {
             )
         }
         else {
-            <Progress.Bar
-                style={styles.progress}
-                progress={this.state.progress}
-                indeterminate={this.state.indeterminate}
-            />
+            return (
+                <Progress.Bar
+                    style={styles.progress}
+                    progress={this.state.progress}
+                    indeterminate={this.state.indeterminate}
+                />
+            )
+
         }
 
         return (
