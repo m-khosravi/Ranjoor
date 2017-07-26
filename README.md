@@ -72,3 +72,7 @@ Ganjoor with some difficulties in React-Native.
 ## Todo: 7.25.2017
 * Complete ExploreCards
 * Decide whether to use drawer or not
+
+## Todo: 7.26.2017
+* Card improvements
+* More of poem implmenetation
