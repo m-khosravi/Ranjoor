@@ -10,6 +10,7 @@ import {
 import { Card, ListItem, Button, Icon, Avatar, Grid, Row, Col } from 'react-native-elements';
 import Router from 'react-native-simple-router';
 import * as Progress from 'react-native-progress';
+import * as Animatable from 'react-native-animatable';
 
 export default class ExploreCard extends Component {
     constructor() {
