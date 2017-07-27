@@ -77,3 +77,8 @@ Ganjoor with some difficulties in React-Native.
 * Card improvements
 * More of poem implmenetation
 * Explore Progressbar
+
+## Todo: 7.27.2017
+* Animating the views
+* Performance Tracking
+* Performance Improvements
