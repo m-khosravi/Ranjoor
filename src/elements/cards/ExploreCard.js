@@ -62,7 +62,7 @@ export default class ExploreCard extends Component {
         /* Check if the progress is completed */
         if (this.state.progress == 1) {
             return (
-                <View style={{ flexDirection: 'row', marginBottom:5 }}>
+                <Animatable.View animation="zoomInUp" style={{ flexDirection: 'row', marginBottom:5 }}>
                     <View style={{ flex: 1 }}></View>
                     <Card
                         containerStyle={{
@@ -129,7 +129,7 @@ export default class ExploreCard extends Component {
                         </Grid>
                     </Card>
                     <View style={{ flex: 1 }}></View>
-                </View>
+                </Animatable.View>
             )
         }
         else {
