@@ -29,6 +29,14 @@ class RanjoorExplore extends Component {
         renderLoadingIndicator: PropTypes.func.isRequired,
         renderLoadingErrorIndicator: PropTypes.func.isRequired
     }
+    
+    static defaultProps = {
+        distanceToLoadMore: 1500,
+        canLoadMore: false,
+        scrollEventThrottle: 100,
+        renderLoadingIndicator: () => <DefaultLoadingIndicator />,
+        renderLoadingErrorIndicator: () => <View />,
+    }
     static navigationOptions = {
         header: null,
         title: 'گشت و گذار',
