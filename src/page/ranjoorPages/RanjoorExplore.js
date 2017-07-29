@@ -68,6 +68,21 @@ class RanjoorExplore extends Component {
     };
 
     render() {
+        let statusIndicator
+        
+        if(this.state.isDisplayingError) {
+            statusIndicator = React.cloneElement(
+                this.props.renderLoadingErrorIndicator(
+                    { onRetryLoadMore: this._loadMoreAsync }
+                ),
+                { key: 'loading-error-indicator' },
+            )
+        } else if(this.state.isLoading) {
+            statusIndicator = React.cloneElement(
+                this.props.renderLoadingIndicator(),
+                { key: 'loading-indicator' }
+            )
+        }
         return (
             <View style={styles.ExploreContainer}>
                 <ExploreHeader />
