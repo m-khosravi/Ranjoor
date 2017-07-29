@@ -83,5 +83,9 @@ Ganjoor with some difficulties in React-Native.
 * Performance Tracking
 * Performance Improvements
 
-# Todo: 7.28.2017
+## Todo: 7.28.2017
 * Maranj me on Fridays!
+
+## Todo: 7.29.2017
+* Implement the infinite scrollview
+* Improve the UX on the RanjoorExplore
