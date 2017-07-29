@@ -66,7 +66,15 @@ class RanjoorExplore extends Component {
             color: 'white'
         }
     };
+    
+    getScrollResponder() {
+        return this._scrollComponent.getScrollResponder();
+    }
 
+    setNativeProps(nativeProps) {
+        this._scrollComponent.setNativeProps(nativeProps);
+    }
+    
     render() {
         let statusIndicator
 
