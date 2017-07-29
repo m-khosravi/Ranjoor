@@ -29,7 +29,7 @@ class RanjoorExplore extends Component {
         renderLoadingIndicator: PropTypes.func.isRequired,
         renderLoadingErrorIndicator: PropTypes.func.isRequired
     }
-    
+
     static defaultProps = {
         distanceToLoadMore: 1500,
         canLoadMore: false,
@@ -39,7 +39,7 @@ class RanjoorExplore extends Component {
     }
 
     constructor(props, context) {
-        super(props,context)
+        super(props, context)
 
         this.state = {
             isDisplayingError: false,
@@ -69,36 +69,52 @@ class RanjoorExplore extends Component {
 
     render() {
         let statusIndicator
-        
-        if(this.state.isDisplayingError) {
+
+        if (this.state.isDisplayingError) {
             statusIndicator = React.cloneElement(
                 this.props.renderLoadingErrorIndicator(
                     { onRetryLoadMore: this._loadMoreAsync }
                 ),
                 { key: 'loading-error-indicator' },
             )
-        } else if(this.state.isLoading) {
+        } else if (this.state.isLoading) {
             statusIndicator = React.cloneElement(
                 this.props.renderLoadingIndicator(),
                 { key: 'loading-indicator' }
             )
         }
+
+        let {
+            renderScrollComponent,
+            ...props,
+        } = this.props;
+        Object.assign(props, {
+            onScroll: this._handleScroll,
+            children: [this.props.children, statusIndicator],
+        });
+
+        return cloneReferencedElement(renderScrollComponent(props), {
+            ref: component => { this._scrollComponent = component; },
+        });
+        /*
         return (
             <View style={styles.ExploreContainer}>
                 <ExploreHeader />
                 <ScrollView >
-                        <StatusBar
-                            backgroundColor="#705697"
-                            barStyle="light-content"
-                        />
-                        <View>
-                            <ExploreCard />
-                            <ExploreCard />
-                        </View>
+                    <StatusBar
+                        backgroundColor="#705697"
+                        barStyle="light-content"
+                    />
+                    <View>
+                        <ExploreCard />
+                        <ExploreCard />
+                    </View>
                 </ScrollView>
             </View>
-        );
+        ); */
     }
+
+    
 }
 
 var styles = StyleSheet.create({
