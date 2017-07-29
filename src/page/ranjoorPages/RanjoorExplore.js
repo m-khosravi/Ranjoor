@@ -114,7 +114,73 @@ class RanjoorExplore extends Component {
         ); */
     }
 
-    
+    _handleScroll(event) {
+        if (this.props.onScroll) {
+            this.props.onScroll(event);
+        }
+
+        if (this._shouldLoadMore(event)) {
+            this._loadMoreAsync().catch(error => {
+                console.error('Unexpected error while loading more content:', error);
+            });
+        }
+    }
+
+    _shouldLoadMore(event) {
+        let canLoadMore = (typeof this.props.canLoadMore === 'function') ?
+            this.props.canLoadMore() :
+            this.props.canLoadMore;
+
+        return !this.state.isLoading &&
+            canLoadMore &&
+            !this.state.isDisplayingError &&
+            this._distanceFromEnd(event) < this.props.distanceToLoadMore;
+    }
+
+    async _loadMoreAsync() {
+        if (this.state.isLoading && __DEV__) {
+            throw new Error('_loadMoreAsync called while isLoading is true');
+        }
+
+        try {
+            this.setState({ isDisplayingError: false, isLoading: true });
+            await this.props.onLoadMoreAsync();
+        } catch (e) {
+            if (this.props.onLoadError) {
+                this.props.onLoadError(e);
+            }
+            this.setState({ isDisplayingError: true });
+        } finally {
+            this.setState({ isLoading: false });
+        }
+    }
+
+    _distanceFromEnd(event): number {
+        let {
+      contentSize,
+            contentInset,
+            contentOffset,
+            layoutMeasurement,
+    } = event.nativeEvent;
+
+        let contentLength;
+        let trailingInset;
+        let scrollOffset;
+        let viewportLength;
+        if (this.props.horizontal) {
+            contentLength = contentSize.width;
+            trailingInset = contentInset.right;
+            scrollOffset = contentOffset.x;
+            viewportLength = layoutMeasurement.width;
+        } else {
+            contentLength = contentSize.height;
+            trailingInset = contentInset.bottom;
+            scrollOffset = contentOffset.y;
+            viewportLength = layoutMeasurement.height;
+        }
+
+        return contentLength + trailingInset - scrollOffset - viewportLength;
+    }
 }
 
 var styles = StyleSheet.create({
@@ -124,4 +190,7 @@ var styles = StyleSheet.create({
         width: '100%'
     },
 })
+
+Object.assign(InfiniteScrollView.prototype, ScrollableMixin);
+
 export default RanjoorExplore
