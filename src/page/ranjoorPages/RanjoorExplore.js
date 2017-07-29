@@ -5,6 +5,7 @@ import {
     View,
     Image,
     ScrollView,
+    ListView,
     Alert,
     StatusBar
 } from 'react-native';
@@ -39,14 +40,17 @@ class RanjoorExplore extends Component {
             <View style={styles.ExploreContainer}>
                 <ExploreHeader />
                 <ScrollView >
-                    <StatusBar
-                        backgroundColor="#705697"
-                        barStyle="light-content"
-                    />
-                    <View>
-                        <ExploreCard />
-                        <ExploreCard />
-                    </View>
+                    <ListView>
+                        <StatusBar
+                            backgroundColor="#705697"
+                            barStyle="light-content"
+                        />
+                        <View>
+                            <ExploreCard />
+                            <ExploreCard />
+                        </View>
+                    </ListView>
+
                 </ScrollView>
             </View>
         );
