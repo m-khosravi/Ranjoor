@@ -82,3 +82,6 @@ Ganjoor with some difficulties in React-Native.
 * Animating the views
 * Performance Tracking
 * Performance Improvements
+
+# Todo: 7.28.2017
+* Maranj me on Fridays!
