@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import {
     StyleSheet,
     Text,
@@ -16,6 +17,10 @@ import { SearchBar } from 'react-native-elements';
 
 class RanjoorExplore extends Component {
 
+    static propTypes = {
+        ...ScrollView.propTypes,
+        distanceToLoadMore = PropTypes.number
+    }
     static navigationOptions = {
         header: null,
         title: 'گشت و گذار',
@@ -40,7 +45,6 @@ class RanjoorExplore extends Component {
             <View style={styles.ExploreContainer}>
                 <ExploreHeader />
                 <ScrollView >
-                    <ListView>
                         <StatusBar
                             backgroundColor="#705697"
                             barStyle="light-content"
@@ -49,8 +53,6 @@ class RanjoorExplore extends Component {
                             <ExploreCard />
                             <ExploreCard />
                         </View>
-                    </ListView>
-
                 </ScrollView>
             </View>
         );
