@@ -37,6 +37,17 @@ class RanjoorExplore extends Component {
         renderLoadingIndicator: () => <DefaultLoadingIndicator />,
         renderLoadingErrorIndicator: () => <View />,
     }
+
+    constructor(props, context) {
+        super(props,context)
+
+        this.state = {
+            isDisplayingError: false,
+        }
+
+        this._handleScroll = this._handleScroll.bind(this)
+        this._loadMoreAsync = this._loadMoreAsync.bind(this)
+    }
     static navigationOptions = {
         header: null,
         title: 'گشت و گذار',
