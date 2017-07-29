@@ -166,7 +166,7 @@ class RanjoorExplore extends Component {
         }
     }
 
-    _distanceFromEnd(event): number {
+    _distanceFromEnd(event) {
         let {
       contentSize,
             contentInset,
