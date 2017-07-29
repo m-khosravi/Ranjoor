@@ -19,7 +19,15 @@ class RanjoorExplore extends Component {
 
     static propTypes = {
         ...ScrollView.propTypes,
-        distanceToLoadMore = PropTypes.number
+        distanceToLoadMore = PropTypes.number.isRequired,
+        canLoadMore = PropTypes.oneOfType([
+            PropTypes.func,
+            PropTypes.bool
+        ]).isRequired,
+        onLoadMoreAsync: PropTypes.func.isRequired,
+        onLoadError: PropTypes.func,
+        renderLoadingIndicator: PropTypes.func.isRequired,
+        renderLoadingErrorIndicator: PropTypes.func.isRequired
     }
     static navigationOptions = {
         header: null,
