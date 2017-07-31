@@ -18,10 +18,21 @@ import Dataset from 'impagination';
 
 class RanjoorExplore extends Component {
 
+    constructor(props) {
+        super(props)
+        this.state = {
+            dataset: null,
+            datasetState: null
+        }
+
+    }
     /* Setup the imagination method */
     setupImpagination() {
         let dataset = new Dataset({
             pageSize: 15,
+            observe: (datasetState) => {
+                this.setState({datasetState})
+            },
             // Fetch data from here
             fetch(pageOffset, pageSize, stats) {
                 return fetch('http://c.ganjoor.net/beyt-json.php?a=1')
