@@ -89,3 +89,9 @@ Ganjoor with some difficulties in React-Native.
 ## Todo: 7.29.2017
 * Implement the infinite scrollview
 * Improve the UX on the RanjoorExplore
+
+## Todo: 7.30.2017
+* Didn't work on ranjoor :(
+
+## Todo: 7.31.2017
+* Complete implementation of infinite scrollview

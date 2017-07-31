@@ -10,9 +10,6 @@ import {
     Alert,
     StatusBar
 } from 'react-native';
-import ScrollableMixin from 'react-native-scrollable-mixin';
-import cloneReferencedElement from 'react-clone-referenced-element';
-import DefaultLoadingIndicator from './DefaultLoadingIndicator';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import ExploreCard from '../../elements/cards/ExploreCard';
 import ExploreHeader from '../../elements/headers/ExploreHeader';
@@ -65,6 +62,5 @@ var styles = StyleSheet.create({
     },
 })
 
-Object.assign(InfiniteScrollView.prototype, ScrollableMixin);
 
 export default RanjoorExplore
