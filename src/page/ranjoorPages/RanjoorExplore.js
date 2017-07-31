@@ -14,7 +14,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import ExploreCard from '../../elements/cards/ExploreCard';
 import ExploreHeader from '../../elements/headers/ExploreHeader';
 import { SearchBar } from 'react-native-elements';
-import Dataset from 'impagination';
+import { Content } from 'native-base';
 
 class RanjoorExplore extends Component {
 
@@ -53,10 +53,6 @@ class RanjoorExplore extends Component {
         this.setState({ dataset })
     }
 
-    componentDidmount() {
-        this.setupImpagination()
-    }
-
 
     static navigationOptions = {
         header: null,
@@ -81,7 +77,7 @@ class RanjoorExplore extends Component {
             <View style={styles.ExploreContainer}>
                 <ExploreHeader />
                 <ScrollView >
-                    <View>
+                    <Content>
                         {this.state.datasetState.map(record => {
                             return (
                                 <Animatable.View animation="fadeIn" style={{ flexDirection: 'row', marginBottom: 2 }}>
@@ -97,7 +93,7 @@ class RanjoorExplore extends Component {
                                         <Grid>
                                             <Row style={{ flexDirection: 'row', justifyContent: 'flex-end', flex: 1 }}>
                                                 <View style={{ flexDirection: 'row', alignSelf: 'flex-end' }}>
-                                                    <Text style={{ fontFamily: 'IRANSans', marginRight: 5, marginTop: 12, color: '#505056' }}>{this.state.rawData.poet}</Text>
+                                                    <Text style={{ fontFamily: 'IRANSans', marginRight: 5, marginTop: 12, color: '#505056' }}></Text>
                                                     <Avatar
                                                         medium
                                                         rounded
@@ -115,12 +111,12 @@ class RanjoorExplore extends Component {
                                                 <View style={{ flex: 1, margin: 10 }}>
                                                     <View style={{ alignSelf: 'flex-end', flex: 1 }}>
                                                         <Text style={{ fontSize: 14, alignSelf: 'flex-end', fontFamily: 'IRANSans_Bold', color: 'black' }}>
-                                                            {this.state.rawData.m1}
+
                                                         </Text>
                                                     </View>
                                                     <View style={{ alignSelf: 'flex-start', flex: 1 }}>
                                                         <Text style={{ fontSize: 14, alignSelf: 'flex-start', fontFamily: 'IRANSans_Bold', color: 'black', marginTop: 10 }}>
-                                                            {this.state.rawData.m2}
+
                                                         </Text>
                                                     </View>
                                                 </View>
@@ -155,7 +151,7 @@ class RanjoorExplore extends Component {
                                 </Animatable.View>
                             )
                         })}
-                    </View>
+                    </Content>
                 </ScrollView>
             </View>
         );
