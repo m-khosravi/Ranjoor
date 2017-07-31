@@ -31,26 +31,28 @@ class RanjoorExplore extends Component {
         let dataset = new Dataset({
             pageSize: 15,
             observe: (datasetState) => {
-                this.setState({datasetState})
+                this.setState({ datasetState })
             },
             // Fetch data from here
             fetch(pageOffset, pageSize, stats) {
                 return fetch('http://c.ganjoor.net/beyt-json.php?a=1')
-                .then(response => response.json())
-                .catch((error) => {
-                    console.error(error)
-                })
+                    .then(response => response.json())
+                    .catch((error) => {
+                        console.error(error)
+                    })
             }
         })
 
+        /* 
+        * To pull all of this together and start fetching data we need to set the dataset on the components local state.
+        * Then we need to set thereadOffset to record 0. This is so Impagination
+        * knows exactly what record you are on when scrolling through the list.
+        * If we get close to the end it will automatically fetch new records. 
+        */
+        dataset.setReadOffset(0)
+        this.setState({ dataset })
     }
 
-    /* 
-    * To pull all of this together and start fetching data we need to set the dataset on the components local state.
-    * Then we need to set thereadOffset to record 0. This is so Impagination
-    * knows exactly what record you are on when scrolling through the list.
-    * If we get close to the end it will automatically fetch new records. 
-    */
 
     static navigationOptions = {
         header: null,
