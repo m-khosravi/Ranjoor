@@ -44,6 +44,14 @@ class RanjoorExplore extends Component {
         })
 
     }
+
+    /* 
+    * To pull all of this together and start fetching data we need to set the dataset on the components local state.
+    * Then we need to set thereadOffset to record 0. This is so Impagination
+    * knows exactly what record you are on when scrolling through the list.
+    * If we get close to the end it will automatically fetch new records. 
+    */
+
     static navigationOptions = {
         header: null,
         title: 'گشت و گذار',
