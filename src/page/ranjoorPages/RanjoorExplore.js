@@ -14,8 +14,25 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import ExploreCard from '../../elements/cards/ExploreCard';
 import ExploreHeader from '../../elements/headers/ExploreHeader';
 import { SearchBar } from 'react-native-elements';
+import Dataset from 'impagination';
 
 class RanjoorExplore extends Component {
+
+    /* Setup the imagination method */
+    setupImpagination() {
+        let dataset = new Dataset({
+            pageSize: 15,
+            // Fetch data from here
+            fetch(pageOffset, pageSize, stats) {
+                return fetch('http://c.ganjoor.net/beyt-json.php?a=1')
+                .then(response => response.json())
+                .catch((error) => {
+                    console.error(error)
+                })
+            }
+        })
+
+    }
     static navigationOptions = {
         header: null,
         title: 'گشت و گذار',
