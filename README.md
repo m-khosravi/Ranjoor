@@ -95,3 +95,10 @@ Ganjoor with some difficulties in React-Native.
 
 ## Todo: 7.31.2017
 * Complete implementation of infinite scrollview
+* Introduce Impagination
+* Create the React Native app
+* Create a component that will be shared in iOS and Android
+* Use NativeBase for styling
+* Create an Impagination dataset
+* Render that dataset to the app screen
+* Listen for scroll events to request new data
