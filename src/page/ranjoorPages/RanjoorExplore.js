@@ -24,18 +24,24 @@ class RanjoorExplore extends Component {
             dataset: null,
             datasetState: null
         }
-
     }
+
+    componentDidMount() {
+        console.log('impagination setup...')
+        this.setupImpagination()
+    }
+
     /* Setup the imagination method */
     setupImpagination() {
         let dataset = new Dataset({
             pageSize: 15,
             observe: (datasetState) => {
-                this.setState({ datasetState })
+                console.log('setting the datasetState')
+                this.setState({datasetState})
             },
             // Fetch data from here
             fetch(pageOffset, pageSize, stats) {
-                return fetch('http://c.ganjoor.net/beyt-json.php?a=1')
+                return fetch('http://poetrydb.org/author')
                     .then(response => response.json())
                     .catch((error) => {
                         console.error(error)
@@ -77,6 +83,7 @@ class RanjoorExplore extends Component {
             <View style={styles.ExploreContainer}>
                 <ExploreHeader />
                 <ScrollView >
+                    <View></View>
                     <Content>
                         {this.state.datasetState.map(record => {
                             return (
