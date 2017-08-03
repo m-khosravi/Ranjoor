@@ -15,6 +15,7 @@ import ExploreCard from '../../elements/cards/ExploreCard';
 import ExploreHeader from '../../elements/headers/ExploreHeader';
 import { SearchBar } from 'react-native-elements';
 import { Content } from 'native-base';
+import Dataset from 'impagination';
 
 class RanjoorExplore extends Component {
 
@@ -31,7 +32,7 @@ class RanjoorExplore extends Component {
         this.setupImpagination()
     }
 
-    /* Setup the imagination method */
+    /* Setup the impagination method */
     setupImpagination() {
         let dataset = new Dataset({
             pageSize: 15,
