@@ -7,8 +7,6 @@
 		"test": "jest"
 	},
 	"dependencies": {
-		"binary-search-tree": "^0.2.6",
-		"impagination": "^1.0.0-alpha.3",
 		"react": "16.0.0-alpha.12",
 		"react-native": "0.46.1",
 		"react-native-android-statusbar": "^0.1.3",
