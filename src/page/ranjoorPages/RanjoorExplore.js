@@ -83,7 +83,6 @@ class RanjoorExplore extends Component {
             <View style={styles.ExploreContainer}>
                 <ExploreHeader />
                 <ScrollView >
-                    <View></View>
                     <Content>
                         {this.state.datasetState.map(record => {
                             return (
