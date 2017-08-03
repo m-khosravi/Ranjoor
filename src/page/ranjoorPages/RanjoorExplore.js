@@ -27,7 +27,7 @@ class RanjoorExplore extends Component {
         }
     }
 
-    componentDidMount() {
+    componentWillMount() {
         console.log('impagination setup...')
         this.setupImpagination()
     }
@@ -37,7 +37,6 @@ class RanjoorExplore extends Component {
         let dataset = new Dataset({
             pageSize: 15,
             observe: (datasetState) => {
-                console.log('setting the datasetState')
                 this.setState({datasetState})
             },
             // Fetch data from here
@@ -118,7 +117,7 @@ class RanjoorExplore extends Component {
                                                 <View style={{ flex: 1, margin: 10 }}>
                                                     <View style={{ alignSelf: 'flex-end', flex: 1 }}>
                                                         <Text style={{ fontSize: 14, alignSelf: 'flex-end', fontFamily: 'IRANSans_Bold', color: 'black' }}>
-
+                                                
                                                         </Text>
                                                     </View>
                                                     <View style={{ alignSelf: 'flex-start', flex: 1 }}>
