@@ -90,10 +90,11 @@ Ganjoor with some difficulties in React-Native.
 * Implement the infinite scrollview
 * Improve the UX on the RanjoorExplore
 
-## Todo: 7.30.2017
-* Didn't work on ranjoor :(
-
 ## Todo: 7.31.2017
 * Create an Impagination dataset
 * Render that dataset to the app screen
 * Listen for scroll events to request new data
+
+## Todo: 8.3.2017 
+* Improve pagination 
+* Approaching the infinite scrollview
